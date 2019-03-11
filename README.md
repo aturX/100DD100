@@ -9,7 +9,7 @@ code100天天天100code
 |  2   |    √    |  底层爬虫  |  py  |
 |  3   |    √    |  FTP上传下载  | Java |
 |  4   |    √   |  txt转MTF转码器 | Python    |
-|  5   |  	     |         |    |
+|  5   |    √     | sqlite3-操作   | Python   |
 |  6   |  	     |         |    |
 |  7   |        |          |    |
 |  8   |  	     |         |    |
