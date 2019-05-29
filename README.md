@@ -12,6 +12,6 @@ code100天天天100code
 |  5   |    √     | sqlite3-操作   | Python   |
 |  6   |  	√     |  HMM转码  | Python |
 |  7   |   √     | 并发编程：线程使用   | Python   |
-|  8   |  	      |         |    |
+|  8   |   √     |   语言特性      | Python   |
 |  9   |  	      |         |    |
 |  10  |          |          |    |
