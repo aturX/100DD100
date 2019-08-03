@@ -1,0 +1,243 @@
+<html>
+
+<head>
+        <title>居中CSS布局Demo</title>
+</head>
+<body>
+    <style>
+    body {
+        margin: 0;
+    }
+    .bk1 {
+        background-color:aquamarine;
+        width: 100%;
+        height:25%;
+         
+    }
+
+    .box1 {
+        width:200px;;
+        height: 100px;
+        border: 1px solid red;
+        background: pink;
+
+        /* 水平居中 */
+        margin: 0 auto;
+
+        /* 文本水平居中 */
+        text-align: center;
+
+    }
+
+    .bk2 {
+        background-color:bisque;
+        width: 100%;
+        height:25%;
+      
+       /* 水平居中 */
+       text-align: center;
+    }
+
+    .box2 {
+        width:200px;;
+        height: 100px;
+        border: 1px solid red;
+        background: yellow;
+
+        /* 水平居中 */
+        display: inline-block;
+
+    }
+
+
+    .bk3 {
+        background-color:cadetblue;
+        width: 100%;
+        height:25%;
+        /* 水平垂直居中: relative 相对基准 */
+        position: relative;  
+        
+        /* 字体居中 */
+        text-align: center;
+    }
+
+    .box3 {
+        width:200px;;
+        height: 100px;
+        border: 1px solid red;
+        background: blue;
+
+        /* 水平垂直居中 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;
+
+    }
+     
+
+    .bk4 {
+        background-color:darkcyan;
+        width: 100%;
+        height:25%;
+
+        /* 水平垂直居中 */
+        position: relative;
+         
+    }
+    .box4 {
+        width:200px;;
+        height: 120px;
+        border: 1px solid red;
+        background: green;
+
+        /* 水平垂直居中： 不需要宽高 */
+        position: absolute;
+        left: 0;
+        right:0;
+        bottom: 0;
+        top:0;
+        margin: auto;
+    }
+
+    </style>
+    <div style="height: 1000px;">
+
+    <!-- 背景1     水平居中（margin:0 auto;）
+    有一个前提，就是被包裹的元素不能有浮动的属性
+    -->
+    <div class="bk1">
+        <div class="box1">
+            <p>水平居中</p>
+            <p>文本水平居中</p>
+        </div>
+
+    </div>
+    <!-- 背景2 水平居中（text-align：center;）
+    将其转换为inline/inline-block，然后其父元素加上text-align:center;
+    -->
+    <div class="bk2">
+            <div class="box2">
+                    <p>居中text-align:center</p>
+             </div>
+
+        </div>
+    <!-- 背景3 水平垂直居中 
+    子元素相对于父元素绝对定位，并且margin值减去自己宽高的一半
+    子元素宽高必须知道
+    -->
+    <div class="bk3">
+        <div class="box3">
+            <p>水平垂直居中</p>
+            <p>字体也居中</p>
+        </div>
+
+        </div>
+    <!-- 背景4  水平垂直居中（二）  子元素相对于父元素绝对定位，并且margin值位auto-->
+    <div class="bk4">
+        <div class="box4">
+            <pre>
+        position: absolute;
+        left: 0;
+        right:0;
+        bottom: 0;
+        top:0;
+        margin: auto;
+            </pre>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+    <style>
+    .css3-bk1 {
+        background-color:violet;
+        width: 1920px;
+        height:160px;
+
+        /* 转换成表格样式居中 */
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+    .css3-box1 {
+        width:200px;;
+        height: 120px;
+        border: 1px solid red;
+        /* 居中 */
+        margin: 0 auto;
+
+        /* 文本居中  */
+        text-align: center;
+    }
+
+    .css3-bk2 {
+        background-color:tomato;
+        width: 100%;
+        height:50%;
+
+        /* 居中 */
+        position: relative;
+    }
+    .css3-box2 {
+        width:200px;;
+        height: 120px;
+        border: 1px solid red;
+        /* 居中 */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .css3-bk3 {
+        background-color:bisque;
+        width: 100%;
+        height:50%;
+
+        /* 居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .css3-box3 {
+        width:200px;;
+        height: 120px;
+        border: 1px solid red;
+    }
+ 
+    </style>
+    <div style="height: 800px;">
+        <div style="text-align: center">
+            <h1>CSS3 居中</h1>
+        </div>
+
+        <!-- 水平垂直居中（三）  display：table-cell -->
+        <div class="css3-bk1">
+                <div class="css3-box1">
+                        <p>转换成表格样式居中</p> 
+                </div>
+            </div>
+        <div class="css3-bk2">
+                <div class="css3-box2">
+                        水平垂直居中（四）
+                        绝对定位和transfrom
+                </div>
+            </div>
+        
+        <div class="css3-bk3">
+                <div class="css3-box3">
+                        css3中的flex属性  
+                </div>
+            </div>
+
+    </div>
+
+
+</body>
+
+</html>
