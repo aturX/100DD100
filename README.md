@@ -16,9 +16,9 @@ code100天天天100code
 |  9   |   √     |   语言特性      | Python   |
 |  10   |  	√      | BCD转码器  |  Go  |
 |  11   |  	√     | 快速排序|  Go  |
-|  12   |  	      | 图片居中布局 |  CSS  |
+|  12   |  	√    | 图片居中布局 |  CSS  |
 |  12   |  	      | Flask-pipenv虚拟环境  | Python  |
-|  13   |  	      |  Snack 贪吃蛇 | Go   |
+|  13   |  	√     |  Snack 贪吃蛇 | Go   |
 |  14   |  	      | Socket聊天软件-GUI | Python |
 |  15   |  	      | 豆瓣top250爬虫-Web| Python  |
 |  16   |  	      |         |    |
