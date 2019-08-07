@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>九宫格布局 - display</title>
+    </head>
+    <body>
+        <!-- - "display"属性
+        ---- block  块级元素： div p form
+        ---- inline 行内元素： span a 
+        ---- none  常用隐藏文件 而不删除 不会占位 （visibility：hidden  隐藏元素，占用空间）
+        ---- inline-block	行内块元素。（CSS2.1 新增的值）
+        ---- list-item	此元素会作为列表显示。
+        ---- table 此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。
+        ---- inline-table 此元素会作为内联表格来显示（类似 <table>），表格前后没有换行符。
+        ---- inherit 规定应该从父元素继承 display 属性的值。 -->
+        <style>
+            .father {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .bk {
+                background: burlywood;
+                width: 606px;
+                height: 606px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+
+            }
+
+            /* dispaly 演示 */
+
+            span {
+                margin: 0;
+                background: yellow; 
+                border:solid 1px black;
+                /* display: inline; */
+                width: 200px;
+                height: 200px;
+                /* block */
+                /* display: block; */
+
+                /* inline-block */
+                /* display: inline-block; */
+
+                /* 弹性布局 */
+                display:inline-flex;
+
+                /* 弹性布局 表格  很少用 */
+                /* display:inline-table; */
+
+                /* 变成表格样式 */
+                /* display: list-item; */
+
+                /* 隐藏 */
+                /* display: none; */
+
+            }
+
+
+
+        </style>
+        <div class="father">
+                <div class="bk">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+        </div>
+        </div>
+        
+
+
+    </body>
+
+</html>

@@ -17,12 +17,11 @@ code100天天天100code
 |  10   |  	√      | BCD转码器  |  Go  |
 |  11   |  	√     | 快速排序|  Go  |
 |  12   |  	√    | 图片居中布局 |  CSS  |
-|  12   |  	      | Flask-pipenv虚拟环境  | Python  |
 |  13   |  	√     |  Snack 贪吃蛇 | Go   |
-|  14   |  	      | Socket聊天软件-GUI | Python |
-|  15   |  	      | 豆瓣top250爬虫-Web| Python  |
-|  16   |  	      |         |    |
-|  17   |  	      |         |    |
+|  14   |  	√     | 九宫格布局-display | CSS  |
+|  15   |  	      | Socket聊天软件-GUI | Python |
+|  16   |  	      | 豆瓣top250爬虫-Web| Python  |
+|  17   |  	      | Flask-pipenv虚拟环境  | Python  |
 |  18   |  	      |         |    |
 |  19   |  	      |         |    |
 |  20   |  	      |         |    |
