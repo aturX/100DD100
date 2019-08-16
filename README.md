@@ -19,8 +19,8 @@ code100天天天100code
 |  12   |  	√    | 图片居中布局 |  CSS  |
 |  13   |  	√     |  Snack 贪吃蛇 | Go   |
 |  14   |  	√     | 九宫格布局-display | CSS  |
-|  15   |  	      | Python Web Freamwork | Python |
-|  16   |  	      | |  |
+|  15   |  	√     | Python Web Freamwork | Python |
+|  16   |  	√     | 队列  + 栈  |  Go |
 |  17   |  	      |   |  |
 |  18   |  	      |         |    |
 |  19   |  	      |         |    |
