@@ -1,7 +1,41 @@
+import urllib.parse
 from time import sleep
 import socket
 import routes
+from utils import log
 
+
+class Request(object):
+	def __init__(self):
+		self.method = 'GET'
+		self.path = ''
+		self.query = ''
+		self.body = ''
+
+	def form(self):
+		# body = urllib.parse.unquote("python%26%26%26%26")
+		body = urllib.parse.unquote(self.body)
+		args = body.split('&')
+		f = {}
+		for arg in args:
+			k, v = arg.split("=")
+			f[k] = v
+		return f
+
+
+def parsed_path(path):
+	log("parsed_path", path)
+	index = path.find('?')
+	if index == -1:
+		return path,{}
+	else:
+		request_path = path.split("?", 1)
+		request_query = path.split("?")[1].split("&")
+		query = {}
+		for arg in request_query:
+			k, v = arg.split('=')
+			query[k] = v
+		return request_path, query
 
 
 def response_for_path(path):
@@ -9,8 +43,9 @@ def response_for_path(path):
 	# print(routes.route_dict["/login"]())
 	# print(routes.route_dict[path]())
 	# response = routes.route_dict[path]()
+	request.path, request.query = parsed_path(path)
 	response = routes.route_dict.get(path, routes.route_error)
-	print(response())
+	print(response(request))
 	# return response()
 	return response()
 
@@ -47,6 +82,10 @@ def run(host, port):
 				continue
 			path = request.split('\r\n')[0].split(' ')[1]
 			method = request.split('\r\n')[0].split(' ')[0]
+
+			# 解析 path
+			requestPath, requestQuery = parsed_path(path)
+			log(requestPath, requestQuery)
 			# response = "你要啥 我不知道"
 			# response = "？"
 			response = response_for_path(path)
@@ -57,6 +96,7 @@ def run(host, port):
 			sleep(3)
 
 
+request = Request()
 
 if __name__ == '__main__':
 	# 启动服务器 需要一个端口
@@ -68,3 +108,5 @@ if __name__ == '__main__':
 		"port": 3000
 	}
 	run(**config)
+
+
