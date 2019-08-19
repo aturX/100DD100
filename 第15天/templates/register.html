@@ -5,10 +5,18 @@
     <title>注册</title>
 </head>
 <body>
-    <form action="/doregister" method="get">
-        <input type="text" name="rName" placeholder="注册用户名">
-        <input type="password" name="rPassword" placeholder="注册密码">
+    <form action="/doregister" method="GET">
+           <h2>GET 提交</h2>
+        <input type="text" name="username" placeholder="注册用户名">
+        <input type="password" name="password" placeholder="注册密码">
         <input type="submit" value="注册">
     </form>
+    <form action="/doregisterPost" method="POST">
+        <h2>POST 提交</h2>
+        <input type="text" name="username" placeholder="注册用户名">
+        <input type="password" name="password" placeholder="注册密码">
+        <input type="submit" value="注册">
+    </form>
+    <h3>{{result}}</h3>
 </body>
 </html>

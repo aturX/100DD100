@@ -17,6 +17,7 @@ class Request(object):
 		body = urllib.parse.unquote(self.body)
 		args = body.split('&')
 		f = {}
+		log("args---------",args)
 		for arg in args:
 			k, v = arg.split("=")
 			f[k] = v
@@ -39,12 +40,18 @@ def parsed_path(path):
 		return request_path, query
 
 
-def response_for_path(path):
+def response_for_path(_request):
 	# print(routes.route_dict)
 	# print(routes.route_dict["/login"]())
 	# print(routes.route_dict[path]())
 	# response = routes.route_dict[path]()
 	# 解析 path
+	method = _request.split('\r\n')[0].split(' ')[0]
+	path = _request.split('\r\n')[0].split(' ')[1]
+	body = _request.split('\r\n\r\n')[1]
+	# 写入到全局变量request中
+	request.method = method
+	request.body = body
 	request.path, request.query = parsed_path(path)
 	response = routes.route_dict.get(request.path, routes.route_error)
 	log("*********", request.path, request.query)
@@ -88,7 +95,7 @@ def run(host, port):
 			# 解析 path
 			# response = "你要啥 我不知道"
 			# response = "？"
-			response = response_for_path(path)
+			response = response_for_path(request)
 
 		# 4、 返回给 用户的需求
 			connect.sendall(response)  # Accept: text/html

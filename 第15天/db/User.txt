@@ -1,10 +1,14 @@
-{
-  "rName": "lsy",
-  "rPassword": "lsy"
-}{
-  "rName": "lsy",
-  "rPassword": "lsy"
-}{
-  "rName": "admin",
-  "rPassword": "admin"
-}
+[
+  {
+    "password": "aturx",
+    "username": "aturx"
+  },
+  {
+    "password": "adfadsf",
+    "username": "aturx"
+  },
+  {
+    "password": "lsy",
+    "username": "lsy"
+  }
+]

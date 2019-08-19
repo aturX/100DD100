@@ -3,7 +3,7 @@
 '''
 	路由： 告诉用户 每个函数在哪里
 '''
-from models import save
+from models import save, load, User
 from utils import log
 
 
@@ -55,6 +55,10 @@ def dologin(request):
 	log("dologin query", request.query["user"])
 
 	# 用户信息应该取自文件
+	loginData = load("./db/User.txt")
+
+	log("loginData", loginData)
+
 	user = "admin"
 	password = "admin123"
 	r = b'HTTP / 1.1 200 OK\r\nContent - Type: text / html;\r\ncharset = utf-8\r\n\r\nlogin fail!'
@@ -75,6 +79,25 @@ def doregister(request):
 		r = b'HTTP / 1.1 200 OK\r\nContent - Type: text / html;\r\ncharset = utf-8\r\n\r\nregister fail!'
 	return r
 
+def doregister_post(request):
+	header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n'
+	log("******Method******", request.method)
+	if request.method == 'POST':
+		form = request.form()
+		u = User.new(form)
+		if u.validate_register():
+			u.save()
+			result = '注册成功<br> <pre>{}</pre>'.format(User.all())
+		else:
+			result = '用户名长度必须大于1'
+	else:
+		result = ''
+	body = template('register.html')
+	body = body.replace('{{result}}', result)  # 模板的作用
+	r = header + body
+	log("r", r)
+	return r.encode('utf-8')
+
 def route_register(request):
 	# 用户注册
 	response = template("register.html")
@@ -89,5 +112,6 @@ route_dict = {
 	"/register": route_register,
 	"/static/doge.gif": get_img,
 	"/dologin": dologin,
-	"/doregister": doregister
+	"/doregister": doregister,
+	"/doregisterPost": doregister_post
 }
