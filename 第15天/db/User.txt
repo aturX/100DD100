@@ -1,0 +1,10 @@
+{
+  "rName": "lsy",
+  "rPassword": "lsy"
+}{
+  "rName": "lsy",
+  "rPassword": "lsy"
+}{
+  "rName": "admin",
+  "rPassword": "admin"
+}

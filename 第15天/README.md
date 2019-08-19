@@ -56,6 +56,9 @@
   页面 GET  POST 请求的讲解
   path 解析的讲解
   unquote 的讲解
+  
+  3. models.py: 数据层 服务数据的持久化
+  
 
   
      

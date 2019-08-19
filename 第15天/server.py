@@ -29,7 +29,8 @@ def parsed_path(path):
 	if index == -1:
 		return path,{}
 	else:
-		request_path = path.split("?", 1)
+		request_path = path.split("?")[0]
+		log("request_path", request_path)
 		request_query = path.split("?")[1].split("&")
 		query = {}
 		for arg in request_query:
@@ -43,11 +44,12 @@ def response_for_path(path):
 	# print(routes.route_dict["/login"]())
 	# print(routes.route_dict[path]())
 	# response = routes.route_dict[path]()
+	# 解析 path
 	request.path, request.query = parsed_path(path)
-	response = routes.route_dict.get(path, routes.route_error)
-	print(response(request))
+	response = routes.route_dict.get(request.path, routes.route_error)
+	log("*********", request.path, request.query)
 	# return response()
-	return response()
+	return response(request)
 
 # response_for_path("/loginggg")
 
@@ -84,8 +86,6 @@ def run(host, port):
 			method = request.split('\r\n')[0].split(' ')[0]
 
 			# 解析 path
-			requestPath, requestQuery = parsed_path(path)
-			log(requestPath, requestQuery)
 			# response = "你要啥 我不知道"
 			# response = "？"
 			response = response_for_path(path)

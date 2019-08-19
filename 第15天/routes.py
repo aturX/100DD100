@@ -3,6 +3,9 @@
 '''
 	路由： 告诉用户 每个函数在哪里
 '''
+from models import save
+from utils import log
+
 
 def template(filename):
 	path = "templates/" + filename
@@ -48,16 +51,43 @@ def get_img(request):
 	return img
 
 def dologin(request):
-	# if user == "admin" and password == "admin":
-	# 	return b'success'
-# 	# else:
-# 	# 	return b'fail'
-	pass
+	log("dologin path", request.path)
+	log("dologin query", request.query["user"])
 
+	# 用户信息应该取自文件
+	user = "admin"
+	password = "admin123"
+	r = b'HTTP / 1.1 200 OK\r\nContent - Type: text / html;\r\ncharset = utf-8\r\n\r\nlogin fail!'
+	if user == request.query["user"] and password == request.query["password"]:
+		r = route_index(request)
+	# HTTP响应的讲解
+	return r
+
+def doregister(request):
+	log(request.query["rName"])
+	log(request.query["rPassword"])
+	# 注册信息 要写入 数据存储中 （数据库、缓存、文件）
+	if len(request.query["rName"]) > 1 and len(request.query["rPassword"]) > 1:
+		r = route_index(request)
+		# 注册数据保存
+		save(request.query, "db/User.txt")
+	else:
+		r = b'HTTP / 1.1 200 OK\r\nContent - Type: text / html;\r\ncharset = utf-8\r\n\r\nregister fail!'
+	return r
+
+def route_register(request):
+	# 用户注册
+	response = template("register.html")
+	# HTTP响应的讲解
+	response_head = 'HTTP / 1.1 200 OK\r\nContent - Type: text / html;\r\ncharset = utf-8\r\n\r\n'
+	response = response_head + response
+	return response.encode("utf-8")
 
 route_dict = {
 	"/": route_index,
 	"/login": route_login,
+	"/register": route_register,
 	"/static/doge.gif": get_img,
-	"/dologin": dologin
+	"/dologin": dologin,
+	"/doregister": doregister
 }
