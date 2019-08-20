@@ -42,6 +42,22 @@ class Model(object):
 		return m
 
 	@classmethod
+	def find_by(cls, **kwargs):
+		"""
+		用法如下，kwargs 是只有一个元素的 dict
+		u = User.find_by(username='gua')
+		"""
+		log('kwargs, ', kwargs)
+		k, v = '', ''
+		for key, value in kwargs.items():
+			k, v = key, value
+		all = cls.all()
+		for m in all:
+			if v == m.__dict__[k]:
+				return m
+		return None
+
+	@classmethod
 	def all(cls):
 		"""
 		得到一个类的所有存储的实例
@@ -80,7 +96,9 @@ class User(Model):
 		self.password = form.get('password', '')
 
 	def validate_login(self):
-		return self.username == 'admin' and self.password == 'admin'
+		# return self.username == 'gua' and self.password == '123'
+		u = User.find_by(username=self.username)
+		return u is not None and u.password == self.password
 
 	def validate_register(self):
 		return len(self.username) > 2 and len(self.password) > 2

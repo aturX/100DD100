@@ -31,7 +31,7 @@ class Request(object):
 		Cookie 的套路
 		'''
 		# 1. 从请求中获取Cookie 如果存在的话
-		cookies = self.headers.get('Cookies', '')
+		cookies = self.headers.get('Cookie', '')
 		kvs = cookies.split('; ')
 		for kv in kvs:
 			if '=' in kv:
@@ -67,7 +67,7 @@ def parsed_path(path):
 	log("parsed_path", path)
 	index = path.find('?')
 	if index == -1:
-		return path,{}
+		return path, {}
 	else:
 		request_path = path.split("?")[0]
 		log("request_path", request_path)
@@ -88,12 +88,14 @@ def response_for_path(_request):
 	method = _request.split('\r\n')[0].split(' ')[0]
 	path = _request.split('\r\n')[0].split(' ')[1]
 	body = _request.split('\r\n\r\n')[1]
+	request.add_headers(_request.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
 	# 写入到全局变量request中
 	request.method = method
 	request.body = body
 	request.path, request.query = parsed_path(path)
 	response = routes.route_dict.get(request.path, routes.route_error)
-	log("*********", request.path, request.query)
+	log("***************************", _request.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
+	log("***************************", request.headers,request.cookies)
 	# return response()
 	return response(request)
 
@@ -120,21 +122,19 @@ def run(host, port):
 			s.listen()
 			connect, address = s.accept()
 			# print(connect.recv(1000))
-			request = connect.recv(1000)
-			request = request.decode('utf-8')
-			print(request)
+			r = connect.recv(1000)
+			r = r.decode('utf-8')
+			print(r)
 			# print(request.split('\r\n')[0])
 			# print(request.split('\r\n')[0].split(' ')[1])
 			# print(request.split('\r\n')[0].split(' ')[0])
-			if len(request.split()) < 2:
+			if len(r.split()) < 2:
 				continue
-			path = request.split('\r\n')[0].split(' ')[1]
-			method = request.split('\r\n')[0].split(' ')[0]
 
 			# 解析 path
 			# response = "你要啥 我不知道"
 			# response = "？"
-			response = response_for_path(request)
+			response = response_for_path(r)
 
 		# 4、 返回给 用户的需求
 			connect.sendall(response)  # Accept: text/html
