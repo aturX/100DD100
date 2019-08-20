@@ -21,8 +21,8 @@ code100天天天100code
 |  14   |  	√     | 九宫格布局-display | CSS  |
 |  15   |  	√     | Python Web Freamwork | Python |
 |  16   |  	√     | 队列  + 栈  |  Go |
-|  17   |  	      |   |  |
-|  18   |  	      |         |    |
+|  17   |  	      | Web Cookie与Session  | Python |
+|  18   |  	      |  Cookie 和 Session |   Python   |
 |  19   |  	      |         |    |
 |  20   |  	      |         |    |
 |  21   |  	      |         |    |

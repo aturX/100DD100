@@ -6,18 +6,57 @@ from utils import log
 
 
 class Request(object):
+	"""
+	1. headers   请求头
+	2. body
+	3. query
+	4. path
+	5. method
+	"""
 	def __init__(self):
 		self.method = 'GET'
 		self.path = ''
-		self.query = ''
+		self.query = {}
 		self.body = ''
+		self.headers = {}
+		self.cookies = {}
+
+	# 第一次访问是没有cookies的
+	def add_cookies(self):
+		# 为头部添加cookies (本质： 字符串结构化处理)
+		'''
+		[
+            'Cookie: height=111; user=222'
+        ]
+		Cookie 的套路
+		'''
+		# 1. 从请求中获取Cookie 如果存在的话
+		cookies = self.headers.get('Cookies', '')
+		kvs = cookies.split('; ')
+		for kv in kvs:
+			if '=' in kv:
+				k, v = kv.split('=')
+				self.cookies[k] = v
+
+	# headers 的结构化  字符串 -> 数据结构
+	def add_headers(self, header):
+		"""
+	        获取头部信息
+	        Accept-Language: zh-CN,zh;q=0.8
+	        Cookie: height=1221; user=lsy
+		 """
+		lines = header
+		for line in lines:
+			k, v = line.split(': ', 1)
+			self.headers[k] = v
+		# 请求中的headers 都写入 对象 并新增cookies
+		self.add_cookies()
 
 	def form(self):
 		# body = urllib.parse.unquote("python%26%26%26%26")
 		body = urllib.parse.unquote(self.body)
 		args = body.split('&')
 		f = {}
-		log("args---------",args)
 		for arg in args:
 			k, v = arg.split("=")
 			f[k] = v
@@ -112,7 +151,7 @@ if __name__ == '__main__':
 	config = {
 		# "host": "lisiyi.top",
 		"host": "localhost",
-		"port": 3000
+		"port": 4000
 	}
 	run(**config)
 

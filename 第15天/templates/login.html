@@ -5,10 +5,15 @@
         <meta charset="UTF-8">
     </head>
     <body>
+     <h2>你好 {{username}}</h2>
         <form method="get" action="/dologin">
             <input name="user" type="text" placeholder="输入账号">
+            <br>
             <input name="password" type="password" placeholder="输入密码">
+            <br>
             <input type="submit" value="登录">
         </form>
+     <h3>当前用户</h3>
+     <h3>{{result}}</h3>
     </body>
 </html>

@@ -107,8 +107,8 @@ def route_register(request):
 	return response.encode("utf-8")
 
 route_dict = {
-	"/": route_index,
-	"/login": route_login,
+	"/": route_login,
+	"/home": route_index,
 	"/register": route_register,
 	"/static/doge.gif": get_img,
 	"/dologin": dologin,
