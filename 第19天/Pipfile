@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 flask = "*"
 flasgger = "*"
+loguru = "*"
+flask-loguru = "*"
 
 [requires]
 python_version = "3.7"

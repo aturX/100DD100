@@ -2,9 +2,19 @@ import random
 
 from flasgger import Swagger
 from flask import Flask, request, jsonify
+from flask_loguru import Logger
+from flask_loguru import logger
 
 app = Flask(__name__)
-Swagger(app)
+Swagger(app)    # API 文档
+log = Logger()  # 日志管理
+
+# 日志初始化
+log.init_app(app, {
+    "LOG_PATH": "./",
+    "LOG_NAME": "log/flask_loguru.log"
+})
+
 
 # Todo 访问API 接口地址 ： http://localhost:5000/apidocs/
 # 使用Restful API 风格
@@ -96,6 +106,13 @@ def say_hello(username):
 	              description: 打印字符串 hello lsy
 	              default: hello lsy
 	    """
+	logger.error("Fail Hello world")
+
+	logger.warning("Warning Hello world")
+
+	logger.info("Info Hello world")
+
+	logger.debug("Debug Hello world")
 	return jsonify(
 		content="Hello  " + username
 	)

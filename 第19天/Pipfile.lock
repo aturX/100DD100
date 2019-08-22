@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b97724b1c5be7c7cb46af19c3fc7294f5197150e9fe3f74f56f164bf78391b1c"
+            "sha256": "e9c11bf0240c2970cb3240aaaa513340f9a889acad3507667b7a85be0bc2a442"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,14 @@
             ],
             "version": "==7.0"
         },
+        "colorama": {
+            "hashes": [
+                "sha256:05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d",
+                "sha256:f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==0.4.1"
+        },
         "flasgger": {
             "hashes": [
                 "sha256:45ce85bf826f71e07d734e52a1af000b3fef82bd1a2337ea5bc4585a3383c56d",
@@ -45,6 +53,14 @@
             ],
             "index": "pypi",
             "version": "==1.1.1"
+        },
+        "flask-loguru": {
+            "hashes": [
+                "sha256:00e4fa454177acf6b08ca17ed7055b9d9e8f016cc1181aff66f18eb3153d598b",
+                "sha256:cb811f1a69aa6e9dbd54620d32d3b35efec54bb763f5ac1e7a1cc3ddae38960e"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
         },
         "itsdangerous": {
             "hashes": [
@@ -66,6 +82,14 @@
                 "sha256:8d4a2b7b6c2237e0199c8ea1a6d3e05bf118e289ae2b9d7ba444182a2959560d"
             ],
             "version": "==3.0.2"
+        },
+        "loguru": {
+            "hashes": [
+                "sha256:b6fad0d7aed357b5c147edcc6982606b933754338950b72d8123f48c150c5a4f",
+                "sha256:e3138bfdee5f57481a2a6e078714be20f8c71ab1ff3f07f8fb1cfa25191fed2a"
+            ],
+            "index": "pypi",
+            "version": "==0.3.2"
         },
         "markupsafe": {
             "hashes": [
@@ -109,8 +133,7 @@
         },
         "pyrsistent": {
             "hashes": [
-                "sha256:34b47fa169d6006b32e99d4b3c4031f155e6e68ebcc107d6454852e8e0ee6533",
-                "sha256:4fed7b65acb1cdad371d9cd73da7eee54b0c7efa07064192627f74e383a2151e"
+                "sha256:34b47fa169d6006b32e99d4b3c4031f155e6e68ebcc107d6454852e8e0ee6533"
             ],
             "version": "==0.15.4"
         },
@@ -145,6 +168,14 @@
                 "sha256:a13b74dd3c45f758d4ebdb224be8f1ab8ef58b3c0ffc1783a8c7d9f4f50227e6"
             ],
             "version": "==0.15.5"
+        },
+        "win32-setctime": {
+            "hashes": [
+                "sha256:568fd636c68350bcc54755213fe01966fe0a6c90b386c0776425944a0382abef",
+                "sha256:b47e5023ec7f0b4962950902b15bc56464a380d869f59d27dbf9ab423b23e8f9"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==1.0.1"
         }
     },
     "develop": {}
