@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- 注释是这样的, 不会被显示出来 -->
+<!--
+    html 格式是浏览器使用的标准网页格式
+    简而言之就是 标签套标签
+-->
+<!-- html 中是所有的内容 -->
+<html>
+    <!-- head 中是放一些控制信息, 不会被显示 -->
+    <head>
+        <!-- meta charset 指定了页面编码, 否则中文会乱码 -->
+        <meta charset="utf-8">
+        <!-- title 是浏览器显示的页面标题 -->
+        <title>消息页面</title>
+    </head>
+    <!-- body 中是浏览器要显示的内容 -->
+    <body>
+        <form action="/messages" method="post">
+            <!-- textarea 是一个文本域 -->
+            <!-- name rows cols 都是属性, 用处上课讲 -->
+            <textarea name="message" rows="8" cols="40"></textarea>
+            <textarea name="author" rows="8" cols="40"></textarea>
+            <!-- button type=submit 才可以提交表单 -->
+            <button type="submit">POST 提交</button>
+        </form>
+        <form action="/messages" method="get">
+            <textarea name="message" rows="8" cols="40"></textarea>
+            <button type="submit">GET 提交</button>
+        </form>
+    {{messages}}
+    </body>
+</html>
