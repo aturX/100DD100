@@ -26,7 +26,7 @@ code100天天天100code
 |  19  |  	√     | Loguru + Swagger   |  Python  |
 |  20  |    √      | 留言板 | 前端页面   |
 |  21  |    √      | Todo List | Python   |
-|  22  |  	      |         |    |
+|  22  |    √     | jinja 模板  | Python   |
 |  23  |  	      |         |    |
 |  24  |  	      |         |    |
 |  25  |  	      |         |    |

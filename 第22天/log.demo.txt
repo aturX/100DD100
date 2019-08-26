@@ -1,0 +1,844 @@
+16:38:31 test
+16:38:42 test
+16:39 test
+2019:40:08/26/19 16:40:18 test
+2019-40-08/26/19 16:40:28 test
+2019 16:40:43 test
+40 16:40:50 test
+08 16:40:56 test
+2019-08-26 16:41:09 test
+2019-08-26 16:42:25 ----- test
+2019-08-26 16:43:34 ----- test
+2019-08-26 16:45:06 ----- test
+2019-08-26 16:46:03 ----- test
+2019-08-26 16:46:22 ----- test
+2019-08-26 16:48:00 ----- test
+2019-08-26 16:50:13 ----- test
+2019-08-26 16:51:11 ----- test
+2019-08-26 16:51:20 ----- test
+2019-08-26 16:51:50 ----- test
+2019-08-26 16:52:23 ----- test
+2019-08-26 17:26:23 ----- test
+2019-08-26 17:26:23 ----- kwargs,  {'user_id': 2} <class 'dict'>
+2019-08-26 17:26:23 ----- k,v user_id 2
+2019-08-26 17:26:52 ----- test
+2019-08-26 17:26:52 ----- kwargs,  {'user_id': 2} <class 'dict'>
+2019-08-26 17:26:52 ----- k,v user_id 2
+2019-08-26 17:36:43 ----- test
+2019-08-26 17:37:19 ----- test
+2019-08-26 17:37:19 ----- <class '__main__.Todo'>
+2019-08-26 17:37:41 ----- test
+2019-08-26 17:37:41 ----- <class '__main__.Todo'>
+2019-08-26 17:40:45 ----- test
+2019-08-26 17:40:45 ----- <class '__main__.Todo'>
+2019-08-26 17:41:48 ----- test
+2019-08-26 17:41:48 ----- kwargs,  {'id': 1} <class 'dict'>
+2019-08-26 17:41:48 ----- debug 0
+2019-08-26 17:41:48 ----- <class '__main__.Todo'>
+2019-08-26 18:23:13 ----- test
+2019-08-26 18:23:31 ----- test
+2019-08-26 18:23:31 ----- kwargs,  {'id': 1} <class 'dict'>
+2019-08-26 18:31:06 ----- test
+2019-08-26 18:31:06 ----- kwargs,  {'user_id': 2} <class 'dict'>
+2019-08-26 18:31:06 ----- k,v user_id 2
+2019-08-26 18:32:40 ----- test
+2019-08-26 18:32:40 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 18:34:52 ----- test
+2019-08-26 18:34:52 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 18:34:56 ----- test
+2019-08-26 18:34:56 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 18:35:33 ----- test
+2019-08-26 18:35:33 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 18:35:33 ----- None
+2019-08-26 18:36:15 ----- test
+2019-08-26 18:36:15 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 18:36:15 ----- True
+2019-08-26 18:36:32 ----- test
+2019-08-26 18:36:32 ----- kwargs,  {'id': 2} <class 'dict'>
+2019-08-26 19:34:37 ----- test
+2019-08-26 19:34:37 ----- start at localhost:3000
+2019-08-26 19:35:02 ----- 完整请求
+2019-08-26 19:35:02 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:35:02 ----- 请求结束
+2019-08-26 19:35:02 ----- cookie ['']
+2019-08-26 19:35:02 ----- path and query / {}
+2019-08-26 19:36:12 ----- test
+2019-08-26 19:36:12 ----- start at localhost:3000
+2019-08-26 19:36:16 ----- 完整请求
+2019-08-26 19:36:16 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:16 ----- 请求结束
+2019-08-26 19:36:16 ----- cookie ['']
+2019-08-26 19:36:16 ----- path and query / {}
+2019-08-26 19:36:16 ----- 完整响应
+2019-08-26 19:36:16 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : coding
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:16 ----- 响应结束
+2019-08-26 19:36:21 ----- 完整请求
+2019-08-26 19:36:21 ----- POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 9
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+task=aaaa
+2019-08-26 19:36:21 ----- 请求结束
+2019-08-26 19:36:21 ----- cookie ['']
+2019-08-26 19:36:21 ----- path and query /add {}
+2019-08-26 19:36:21 ----- 完整响应
+2019-08-26 19:36:21 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:21 ----- 响应结束
+2019-08-26 19:36:21 ----- 完整请求
+2019-08-26 19:36:21 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:21 ----- 请求结束
+2019-08-26 19:36:21 ----- cookie ['']
+2019-08-26 19:36:21 ----- path and query / {}
+2019-08-26 19:36:21 ----- 完整响应
+2019-08-26 19:36:21 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : coding
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : aaaa
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:21 ----- 响应结束
+2019-08-26 19:36:23 ----- 完整请求
+2019-08-26 19:36:23 ----- GET /delete?id=2 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:23 ----- 请求结束
+2019-08-26 19:36:23 ----- cookie ['']
+2019-08-26 19:36:23 ----- path and query /delete {'id': '2'}
+2019-08-26 19:36:23 ----- 完整响应
+2019-08-26 19:36:23 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:23 ----- 响应结束
+2019-08-26 19:36:23 ----- 完整请求
+2019-08-26 19:36:23 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:23 ----- 请求结束
+2019-08-26 19:36:23 ----- cookie ['']
+2019-08-26 19:36:23 ----- path and query / {}
+2019-08-26 19:36:23 ----- 完整响应
+2019-08-26 19:36:23 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : coding
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:23 ----- 响应结束
+2019-08-26 19:36:24 ----- 完整请求
+2019-08-26 19:36:24 ----- GET /delete?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:24 ----- 请求结束
+2019-08-26 19:36:24 ----- cookie ['']
+2019-08-26 19:36:24 ----- path and query /delete {'id': '1'}
+2019-08-26 19:36:24 ----- 完整响应
+2019-08-26 19:36:24 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:24 ----- 响应结束
+2019-08-26 19:36:24 ----- 完整请求
+2019-08-26 19:36:24 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:24 ----- 请求结束
+2019-08-26 19:36:24 ----- cookie ['']
+2019-08-26 19:36:24 ----- path and query / {}
+2019-08-26 19:36:24 ----- 完整响应
+2019-08-26 19:36:24 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+</body>
+</html>
+2019-08-26 19:36:24 ----- 响应结束
+2019-08-26 19:36:27 ----- 完整请求
+2019-08-26 19:36:27 ----- POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 12
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+task=adafads
+2019-08-26 19:36:27 ----- 请求结束
+2019-08-26 19:36:27 ----- cookie ['']
+2019-08-26 19:36:27 ----- path and query /add {}
+2019-08-26 19:36:27 ----- 完整响应
+2019-08-26 19:36:27 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:27 ----- 响应结束
+2019-08-26 19:36:27 ----- 完整请求
+2019-08-26 19:36:27 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:27 ----- 请求结束
+2019-08-26 19:36:27 ----- cookie ['']
+2019-08-26 19:36:27 ----- path and query / {}
+2019-08-26 19:36:27 ----- 完整响应
+2019-08-26 19:36:27 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : adafads
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:27 ----- 响应结束
+2019-08-26 19:36:30 ----- 完整请求
+2019-08-26 19:36:30 ----- POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 12
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+task=asdfads
+2019-08-26 19:36:30 ----- 请求结束
+2019-08-26 19:36:30 ----- cookie ['']
+2019-08-26 19:36:30 ----- path and query /add {}
+2019-08-26 19:36:30 ----- 完整响应
+2019-08-26 19:36:30 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:30 ----- 响应结束
+2019-08-26 19:36:30 ----- 完整请求
+2019-08-26 19:36:30 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:30 ----- 请求结束
+2019-08-26 19:36:30 ----- cookie ['']
+2019-08-26 19:36:30 ----- path and query / {}
+2019-08-26 19:36:30 ----- 完整响应
+2019-08-26 19:36:30 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : adafads
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : asdfads
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:30 ----- 响应结束
+2019-08-26 19:36:33 ----- 完整请求
+2019-08-26 19:36:33 ----- POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 9
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+task=asda
+2019-08-26 19:36:33 ----- 请求结束
+2019-08-26 19:36:33 ----- cookie ['']
+2019-08-26 19:36:33 ----- path and query /add {}
+2019-08-26 19:36:33 ----- 完整响应
+2019-08-26 19:36:33 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:33 ----- 响应结束
+2019-08-26 19:36:33 ----- 完整请求
+2019-08-26 19:36:33 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:33 ----- 请求结束
+2019-08-26 19:36:33 ----- cookie ['']
+2019-08-26 19:36:33 ----- path and query / {}
+2019-08-26 19:36:33 ----- 完整响应
+2019-08-26 19:36:33 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : adafads
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : asdfads
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : asda
+            <a href="/delete?id=3">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:33 ----- 响应结束
+2019-08-26 19:36:34 ----- 完整请求
+2019-08-26 19:36:34 ----- GET /delete?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:34 ----- 请求结束
+2019-08-26 19:36:34 ----- cookie ['']
+2019-08-26 19:36:34 ----- path and query /delete {'id': '1'}
+2019-08-26 19:36:34 ----- 完整响应
+2019-08-26 19:36:34 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:34 ----- 响应结束
+2019-08-26 19:36:34 ----- 完整请求
+2019-08-26 19:36:34 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:34 ----- 请求结束
+2019-08-26 19:36:34 ----- cookie ['']
+2019-08-26 19:36:34 ----- path and query / {}
+2019-08-26 19:36:34 ----- 完整响应
+2019-08-26 19:36:34 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            2 : asdfads
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : asda
+            <a href="/delete?id=3">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:34 ----- 响应结束
+2019-08-26 19:36:35 ----- 完整请求
+2019-08-26 19:36:35 ----- GET /delete?id=2 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:35 ----- 请求结束
+2019-08-26 19:36:35 ----- cookie ['']
+2019-08-26 19:36:35 ----- path and query /delete {'id': '2'}
+2019-08-26 19:36:35 ----- 完整响应
+2019-08-26 19:36:35 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:35 ----- 响应结束
+2019-08-26 19:36:35 ----- 完整请求
+2019-08-26 19:36:35 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:35 ----- 请求结束
+2019-08-26 19:36:35 ----- cookie ['']
+2019-08-26 19:36:35 ----- path and query / {}
+2019-08-26 19:36:35 ----- 完整响应
+2019-08-26 19:36:35 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            3 : asda
+            <a href="/delete?id=3">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:36:35 ----- 响应结束
+2019-08-26 19:36:36 ----- 完整请求
+2019-08-26 19:36:36 ----- GET /delete?id=3 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:36 ----- 请求结束
+2019-08-26 19:36:36 ----- cookie ['']
+2019-08-26 19:36:36 ----- path and query /delete {'id': '3'}
+2019-08-26 19:36:36 ----- 完整响应
+2019-08-26 19:36:36 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:36:36 ----- 响应结束
+2019-08-26 19:36:36 ----- 完整请求
+2019-08-26 19:36:36 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:36:36 ----- 请求结束
+2019-08-26 19:36:36 ----- cookie ['']
+2019-08-26 19:36:36 ----- path and query / {}
+2019-08-26 19:36:36 ----- 完整响应
+2019-08-26 19:36:36 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+</body>
+</html>
+2019-08-26 19:36:36 ----- 响应结束
+2019-08-26 19:42:14 ----- 完整请求
+2019-08-26 19:42:14 ----- POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+task=aaa
+2019-08-26 19:42:14 ----- 请求结束
+2019-08-26 19:42:14 ----- cookie ['']
+2019-08-26 19:42:14 ----- path and query /add {}
+2019-08-26 19:42:14 ----- 完整响应
+2019-08-26 19:42:14 ----- HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+2019-08-26 19:42:14 ----- 响应结束
+2019-08-26 19:42:14 ----- 完整请求
+2019-08-26 19:42:14 ----- GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: same-origin
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+
+2019-08-26 19:42:14 ----- 请求结束
+2019-08-26 19:42:14 ----- cookie ['']
+2019-08-26 19:42:14 ----- path and query / {}
+2019-08-26 19:42:14 ----- 完整响应
+2019-08-26 19:42:14 ----- HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : aaa
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+</body>
+</html>
+2019-08-26 19:42:14 ----- 响应结束
+2019-08-26 19:45:33 ----- 完整请求
+2019-08-26 19:45:33 ----- 
+2019-08-26 19:45:33 ----- 请求结束
