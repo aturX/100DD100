@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery加载JSON文件</title>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script  src="index.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">  
+        function indexDemo(result){
+        //回调函数名称(indexDemo)，需要与 src 中一致，而且要与文件地址中名一致。jsonp格式 名称({})
+        //不然无法获取到对应的文件
+            console.log(result)     //打印 indexDemo.json 中的数据
+        }
+    </script> 
+<script type="text/javascript" src="data.json?callback=indexDemo"></script>
+    <!-- jsonp 解决跨域问题 -->
+    <h1>JSON文件内容</h1>
+    <ul>
+        <li></li>
+    </ul>
+    
+</body>
+</html>

@@ -45,8 +45,8 @@
       <file leaf-file-name="routes_user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="103" column="14" lean-forward="true" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+            <state relative-caret-position="103">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#357#585#0" />
                 <element signature="e#616#852#0" />
@@ -58,11 +58,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jinja_demo.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes_simpletodo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes_simpletodo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding>
+                <element signature="e#133#306#0" />
+                <element signature="e#337#573#0" />
+                <element signature="e#898#1101#0" />
+                <element signature="e#1129#1274#0" />
+                <element signature="e#1290#1349#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jinja_demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jinja2Demo/jinja_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="273">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes_static.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes_static.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+              <folding>
+                <element signature="e#170#358#0" />
+                <element signature="e#385#534#0" />
+                <element signature="e#568#677#0" />
+                <element signature="e#710#999#0" />
+                <element signature="e#1042#1270#0" />
+                <element signature="e#1303#2523#0" />
+                <element signature="e#2559#3091#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jinja2Demo/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -110,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="450" />
     <option name="y" value="72" />
     <option name="width" value="1401" />
@@ -269,14 +312,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.082746476" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09859155" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,7 +340,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -424,53 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes_static.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
-          <folding>
-            <element signature="e#170#358#0" />
-            <element signature="e#385#534#0" />
-            <element signature="e#568#677#0" />
-            <element signature="e#710#999#0" />
-            <element signature="e#1042#1270#0" />
-            <element signature="e#1303#2523#0" />
-            <element signature="e#2559#3091#0" />
-            <element signature="e#3742#4195#0" />
-            <element signature="e#4229#4506#0" />
-            <element signature="e#4572#4721#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes_simpletodo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding>
-            <element signature="e#133#306#0" />
-            <element signature="e#337#573#0" />
-            <element signature="e#898#1101#0" />
-            <element signature="e#1129#1274#0" />
-            <element signature="e#1290#1349#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="103" column="14" lean-forward="true" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
-          <folding>
-            <element signature="e#357#585#0" />
-            <element signature="e#616#852#0" />
-            <element signature="e#885#1614#0" />
-            <element signature="e#1650#2215#0" />
-            <element signature="e#2249#2526#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -490,10 +486,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jinja2Demo/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jinja2Demo/jinja_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes_static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+          <folding>
+            <element signature="e#170#358#0" />
+            <element signature="e#385#534#0" />
+            <element signature="e#568#677#0" />
+            <element signature="e#710#999#0" />
+            <element signature="e#1042#1270#0" />
+            <element signature="e#1303#2523#0" />
+            <element signature="e#2559#3091#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#357#585#0" />
+            <element signature="e#616#852#0" />
+            <element signature="e#885#1614#0" />
+            <element signature="e#1650#2215#0" />
+            <element signature="e#2249#2526#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes_simpletodo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding>
+            <element signature="e#133#306#0" />
+            <element signature="e#337#573#0" />
+            <element signature="e#898#1101#0" />
+            <element signature="e#1129#1274#0" />
+            <element signature="e#1290#1349#0" />
+          </folding>
         </state>
       </provider>
     </entry>

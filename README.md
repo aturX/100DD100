@@ -27,7 +27,7 @@ code100天天天100code
 |  20  |    √      | 留言板 | 前端页面   |
 |  21  |    √      | Todo List | Python   |
 |  22  |    √     | jinja 模板  | Python   |
-|  23  |  	      |         |    |
+|  23  |    √     | JSONP解决跨域加载JSON文 | JavaScript   |
 |  24  |  	      |         |    |
 |  25  |  	      |         |    |
 |  26  |  	      |         |    |

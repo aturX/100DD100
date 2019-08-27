@@ -11,7 +11,7 @@ loader = FileSystemLoader(path)
 env = Environment(loader=loader)
 
 # 调用 get_template() 方法加载模板并返回
-template = env.get_template('demo.html')
+template = env.get_template('index.html')
 
 # 用 render() 方法渲染模板
 # 可以传递参数
