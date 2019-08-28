@@ -71,20 +71,20 @@ def find_one():
 # ===
 # 默认更新第一条查询到的数据
 def update():
-    query = {
-        '随机值': 1,
-    }
-    form = {
-        '$set': {
-            'name': '更新 22222',
-        }
-    }
-    options = {
-        'multi': True,
-    }
-    # 注意, 上课这部分代码出问题了, 现在是修复过的
+	query = {
+		'随机值': 1,
+	}
+	form = {
+		'$set': {
+			'name': '更新 22222',
+		}
+	}
+	options = {
+		'multi': True,
+	}
+	# 注意, 上课这部分代码出问题了, 现在是修复过的
     # 相当于 db.user.update(query, form, multi=True)
-    db.user.update(query, form, **options)
+	db.user.update(query, form, **options)
 
 
 update()
@@ -101,12 +101,12 @@ update()
 
 # all 是给用户使用的查询函数
 def all():
-    query = {
-        '_deleted': False,
-    }
-    user_list = list(db.user.find(query))
-    us = []
-    for u in user_list:
-        u.pop('_deleted')
-        us.append(u)
-    print('所有用户', len(us), us)
+	query = {
+		'_deleted': False,
+	}
+	user_list = list(db.user.find(query))
+	us = []
+	for u in user_list:
+		u.pop('_deleted')
+		us.append(u)
+	print('所有用户', len(us), us)
