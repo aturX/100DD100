@@ -30,7 +30,7 @@ code100天天天100code
 |  23  |    √     | JSONP解决跨域加载JSON文 | JavaScript   |
 |  24  |    √    |  算法摘要，加密 | Python   |
 |  25  |    √     | MongoDB 数据库使用 |  数据库  |
-|  26  |  	      | 前端基础 | HTML、CSS  |
+|  26  |  	      | 前端Todo | HTML、CSS  |
 |  27  |  	      |         |        |
 |  28  |  	      |         |    |
 |  29  |  	      |         |    |
