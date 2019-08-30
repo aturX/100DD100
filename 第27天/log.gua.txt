@@ -1,0 +1,331 @@
+17:33:54 完整请求
+17:33:54 请求结束
+17:33:54 cookie ['']
+17:33:54 path and query / {}
+17:33:54 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+17:33:54 完整请求
+17:33:54 请求结束
+17:33:54 cookie ['']
+17:33:54 path and query /todo/index {}
+17:33:54 完整请求
+17:33:54 请求结束
+17:33:54 cookie ['']
+17:33:54 path and query /todo/index {}
+17:33:55 完整请求
+17:33:55 请求结束
+17:33:55 cookie ['']
+17:33:55 path and query /todo/index {}
+17:33:58 完整请求
+17:33:58 请求结束
+17:33:58 cookie ['']
+17:33:58 path and query /todo/index {}
+17:33:59 完整请求
+17:33:59 请求结束
+17:33:59 cookie ['']
+17:33:59 path and query /todo/index {}
+17:33:59 完整请求
+17:33:59 请求结束
+17:33:59 cookie ['']
+17:33:59 path and query /todo/index {}
+17:39:17 完整请求
+17:39:17 请求结束
+17:39:17 cookie ['']
+17:39:17 path and query /todo/index {}
+17:39:24 完整请求
+17:39:24 请求结束
+17:39:24 cookie ['']
+17:39:24 path and query / {}
+17:39:24 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+17:39:25 完整请求
+17:39:25 请求结束
+17:39:25 cookie ['']
+17:39:25 path and query /todo/index {}
+17:40:18 完整请求
+17:40:18 请求结束
+17:40:18 cookie ['']
+17:40:18 path and query /todo/index {}
+17:40:24 完整请求
+17:40:24 请求结束
+17:40:24 cookie ['']
+17:40:24 path and query / {}
+17:40:24 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+17:40:24 完整请求
+17:40:24 请求结束
+17:40:24 cookie ['']
+17:40:24 path and query /todo/index {}
+18:13:15 完整请求
+18:13:15 请求结束
+18:13:15 cookie ['']
+18:13:15 path and query /todo/index {}
+18:23:15 完整请求
+18:23:15 完整请求
+18:23:15 请求结束
+18:23:15 请求结束
+18:23:15 完整请求
+18:23:15 请求结束
+18:23:15 cookie ['']
+18:23:15 path and query /todo/index {}
+18:28:36 完整请求
+18:28:36 完整请求
+18:28:36 请求结束
+18:28:36 请求结束
+18:54:46 完整请求
+18:54:46 请求结束
+18:54:46 完整请求
+18:54:46 请求结束
+08:52:21 完整请求
+08:52:21 请求结束
+08:52:21 cookie ['']
+08:52:21 path and query /todo/index {}
+08:52:23 完整请求
+08:52:23 请求结束
+08:52:23 完整请求
+08:52:23 请求结束
+09:05:57 完整请求
+09:05:57 请求结束
+09:05:57 cookie ['']
+09:05:57 path and query /todo/index {}
+09:06:27 完整请求
+09:06:27 完整请求
+09:06:27 请求结束
+09:06:27 请求结束
+09:06:27 完整请求
+09:06:27 请求结束
+09:06:27 cookie ['']
+09:06:27 path and query /todo/index {}
+09:07:27 完整请求
+09:07:27 完整请求
+09:07:27 请求结束
+09:07:27 请求结束
+09:07:28 完整请求
+09:07:28 请求结束
+09:07:28 cookie ['']
+09:07:28 path and query /todo/index {}
+09:07:28 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+09:07:28 完整请求
+09:07:28 请求结束
+09:07:28 cookie ['']
+09:07:28 path and query /static {'file': 'gua.js'}
+09:07:28 完整请求
+09:07:28 请求结束
+09:07:28 cookie ['']
+09:07:28 path and query /static {'file': 'todo.js'}
+09:07:28 完整请求
+09:07:28 请求结束
+09:07:28 cookie ['']
+09:07:28 path and query /static {'file': 'gua.js'}
+09:12:30 完整请求
+09:12:30 请求结束
+09:12:30 cookie ['']
+09:12:30 path and query / {}
+09:12:30 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+09:12:30 完整请求
+09:12:30 请求结束
+09:12:30 cookie ['']
+09:12:30 path and query /todo/index {}
+09:12:30 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+09:12:30 完整请求
+09:12:30 请求结束
+09:12:30 cookie ['']
+09:12:30 path and query /static {'file': 'gua.js'}
+09:12:31 完整请求
+09:12:31 请求结束
+09:12:31 cookie ['']
+09:12:31 path and query /static {'file': 'todo.js'}
+09:51:20 完整请求
+09:51:20 请求结束
+09:51:20 cookie ['']
+09:51:20 path and query /todo/index {}
+09:51:20 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+09:51:20 完整请求
+09:51:20 请求结束
+09:51:20 cookie ['']
+09:51:20 path and query /static {'file': 'gua.js'}
+09:51:20 HTTP/1.1 200 OK
+
+var log = function(){
+    console.log.apply(console, arguments)
+}
+var e = function(sel){
+    return document.querySelector(sel)
+}
+
+//ajax 函数
+var ajax = function(method, path, data, responseCallback){
+    var request = new XMLHttpRequest()
+    // 设置请求方法 和 请求地址
+    request.open(method, path, true)
+    // 设置 发送数据格式
+    request.setRequestHeader('Content-Type', 'application/json')
+    request.onreadystatechange = function(){
+        if(request.readyState === 4) {
+            reseponseCallback(request.response)
+        }
+    }
+    // 数据转换为JSON  字符串  序列化
+    data = JSON.stringify(data)
+    // 发送请求
+    request.send(data)
+}
+
+var apiTodoAll = function(callback) {
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiTodoAdd = function(form, callback) {
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+09:51:20 完整请求
+09:51:20 请求结束
+09:51:20 cookie ['']
+09:51:20 path and query /static {'file': 'todo.js'}
+09:51:20 HTTP/1.1 200 OK
+
+//模板
+var todoTemplate = function(title){
+    var t = `
+        <div class="todo-cell">
+            <button class="todo-delete">删除</button>
+            <span>${title}</span>
+        </div>
+    `
+    return t
+}
+//插入
+var insertTodo = function(todo){
+    var title = todo.title
+    var todoCell = todoTemplate(title)
+    // 插入TODO list
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+//Ajax 加载
+var loadTodos = function(){
+    // 调用ajax
+    apiTodoAll(
+    function(r){
+        var todos = JSON.parse(r)
+        // 循环添加
+        for(var i = 0; i < todos.length; i++){
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function() {
+    var b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        var input = e('#id-input-todo')
+        var title = input.value
+        log('click add', title)
+        var form = {
+            title: title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            var todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+var bindEvents = function() {
+    bindEventTodoAdd()
+}
+
+var __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+//常用套路
+__main()
+09:51:20 完整请求
+09:51:20 请求结束
+09:51:20 cookie ['']
+09:51:20 path and query /api/todo/all {}
+09:55:23 完整请求
+09:55:23 请求结束
+09:55:23 cookie ['']
+09:55:23 path and query /api/todo/add {}

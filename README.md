@@ -30,8 +30,8 @@ code100天天天100code
 |  23  |    √     | JSONP解决跨域加载JSON文 | JavaScript   |
 |  24  |    √    |  算法摘要，加密 | Python   |
 |  25  |    √     | MongoDB 数据库使用 |  数据库  |
-|  26  |  	      | 前端Todo | HTML、CSS  |
-|  27  |  	      |         |        |
+|  26  |    √     | 前端Todo | HTML、CSS  |
+|  27  |    √     | 原生Aja，跨域问题，API  |  JavaScript |
 |  28  |  	      |         |    |
 |  29  |  	      |         |    |
 |  30  |  	      |         |    |

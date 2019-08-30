@@ -65,7 +65,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../第27天" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -95,7 +95,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="393" y="21" width="934" height="668" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3496659" />
       <window_info anchor="bottom" id="TODO" order="6" />
