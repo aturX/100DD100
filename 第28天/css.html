@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>CSS的布局练习</title>
+     <link rel="stylesheet" type="text/css" href="css.css">
+ 
+ </head>
+ <body>
+
+    <nav>
+        <!-- 导航栏实现 -->
+        <a class="css-nav-item css-active" href="#">首页</a>
+        <a class="css-nav-item" href="#">文章</a>
+        <a class="css-nav-item" href="#">工具</a>
+        <a class="css-nav-item" href="#">关于</a>
+        <a class="css-nav-item css-right" href="#">登录</a>
+        <div class="css-dropdown">
+                <a class="css-dropdown-title" href="#">↓↓↓</a>
+                <div class="css-dropdown-content">
+                   <a class="css-nav-item" href="#">Python</a>
+                   <a class="css-nav-item" href="#">Java</a>
+                   <a class="css-nav-item" href="#">Go</a>
+            </div>
+     </div>
+    </nav>
+
+
+     <div class="css-page">
+         <div class="css-header">
+             header
+         </div>
+
+        <div class="css-container clearfix">
+             <div class="css-index">
+                 index
+             </div>
+             <div class="css-content">
+                输入密码
+                <input class="css-icon-input" type="password" name="pwd" value="">
+             </div>
+             <div class="css-detail">
+                 detail
+             </div>
+         </div>
+
+         <div class="css-footer">
+             footer
+         </div>
+     </div>
+ </body>
+ </html>

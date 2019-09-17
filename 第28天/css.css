@@ -1,0 +1,129 @@
+.css-header {
+    height: 50px;
+    background: lightsteelblue;
+}
+.css-content {
+    height: 80px;
+    background: lightcoral;
+}
+.css-index {
+    height: 50px;
+    background: lightblue;
+}
+.gua-detail {
+    height: 30px;
+    background: lightyellow;
+}
+.css-footer {
+    height: 50px;
+    background: lightseagreen;
+}
+
+
+/* float 的使用 */
+.css-index {
+    float: left;
+    width: 25%;
+}
+
+.css-content {
+    float: left;
+    width: 50%;
+}
+
+.css-detail {
+    float: right;
+    width: 25%;
+}
+
+/*  水平居中 margin */
+.css-container {
+    clear: left;
+    margin: 0 auto;
+    /* height:800px; */
+    width: 80%;
+    background: rgb(37, 178, 32);
+}
+/* 利用伪元素撑满父元素 */
+.clearfix:after {
+    content: ' ';
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.css-header:hover {
+    background:rgb(78, 76, 78);  /* 鼠标划过链接 */
+    color: rgb(255, 251, 251)
+} 
+
+
+/* 1. 实现一个导航栏 */
+nav {
+    background: black;
+    text-align: center;
+}
+
+a.css-nav-item {
+    display: inline-block;
+    color: white;
+    padding: 20px;
+   
+    text-decoration: none;
+}
+
+/* 鼠标移动效果 */
+.css-nav-item:hover {
+    color: black;
+    background: rgb(251,251,251)
+}
+
+/* 高亮效果 */
+a.css-active {
+    background: rgb(197, 198, 201)
+}
+
+a.css-right {
+   float: right;
+}
+
+
+.css-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+.css-dropdown {
+    position: relative;
+
+}
+
+.css-dropdown-title {
+    color: white;
+    text-decoration: none;
+}
+
+
+.css-dropdown:hover 
+.css-dropdown-content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.css-dropdown-content a {
+    display: block;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+input.css-icon-input {
+    border: 1px solid red;
+    font-size: 25px;
+    background: url(logo.png) no-repeat scroll 4px;
+    height: 72px;
+    /* 实现图标输入 */
+    padding-left: 72px;
+}
