@@ -33,7 +33,7 @@ code100天天天100code
 |  26  |    √     | 前端Todo | HTML、CSS  |
 |  27  |    √     | 原生Aja，跨域问题，API  |  JavaScript |
 |  28  |  	√     |CSS布局 核心| CSS HTML  |
-|  29  |  	      | Linux安装与部署 |操作系统 |
+|  29  |  	√     | Linux安装与部署 |操作系统 |
 |  30  |  	      |         |    |
 |  31  |  	      |         |    |
 |  32  |  	      |         |    |
