@@ -12,12 +12,15 @@ Done - 完成
 - 完成  编写主页模板
 - 完成  准备虚拟数据
 - 完成  渲染主页模板
+- 完成  连接使用数据库
+- 完成  使用ORM框架SQLAlchemy
+- 完成  创建表映射 类class
+- 完成  模板上下文环境
 
 
 TODO - 待办
-- 连接使用数据库
-- 使用ORM框架SQLAlchemy
-- 创建表映射 类class
+
+- 模板继承机制
 
 
 
@@ -59,6 +62,16 @@ class Website(db.Model):  # 表明 website
 	url = db.Column(db.String(128))   # 网址
 	info = db.Column(db.String(128))  # 介绍信息
 
+# 模板上下文函数
+@app.context_processor
+def now_user():  # 函数名可以随意修改
+	"""
+	这个函数返回的变量（以字典键值对的形式）将会统一注入到每一个模板的上下文环境中，因此可以直接在模板中使用
+	:return:
+	"""
+	user = User.query.first()
+
+	return dict(user=user.name)  # 需要返回字典，等同于return {'user': user}
 
 
 
@@ -67,10 +80,17 @@ class Website(db.Model):  # 表明 website
 @app.route('/index')
 def index():
 	# 读取数据库
-	name = User.query.first().name  # 读取用户记录
+	# name = User.query.first().name  # 读取用户记录
 	websites = Website.query.all()  # 查询全部网站数据
-	return render_template('index.html', name=name, websites=websites)
+	return render_template('index.html', websites=websites)
 
+# 404 问题
+@app.errorhandler(404)
+def page_not_found(e):
+	# user = User.query.first()  # 读取用户记录
+	return render_template('404.html'), 404  # 返回模板和状态码
+
+# 在子模板里，我们可以使用 extends 标签来声明继承自某个基模板
 
 
 if __name__ == "__main__":
