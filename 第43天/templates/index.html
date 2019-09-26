@@ -6,8 +6,11 @@
 <ul class="movie-list">
     {% for website in websites %}
 
-        <li>{{ website.name }} -- {{ website.url }}</li>
-
+    <li><span class="float-left">{{ website.name }}</span> -- {{ website.url }}
+        <span class="float-right">
+            <a class="goto" href="{{ website.url }}" target="_blank" title="访问网站">访问</a>
+        </span>
+        </li>
     {% endfor %}
 </ul>
 
