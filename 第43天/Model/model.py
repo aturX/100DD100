@@ -1,4 +1,4 @@
-from UrlsList import db, User
+from UrlsList import db, User, Website
 
 
 def test_add_user():

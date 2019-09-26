@@ -1,13 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
- <p>收录网站数量： <span style="color: red">{{ websites|length }}</span></p>
+
+
+<ul class="movie-list add-list">
+    <p>收录网站数量： <span style="color: red">{{ websites|length }}</span></p>
+   <form method="post">
+       <p>网站名称</p> <input type="text" name="name" autocomplete="off" required>
+       <p>网站网址</p> <input type="text" name="url" autocomplete="off" required>
+    <!--网站介绍 <textarea name="info" autocomplete="off"></textarea>-->
+    <input class="btn" type="submit" name="submit" value="添加">
+    </form>
+</ul>
 
 <ul class="movie-list">
     {% for website in websites %}
 
     <li><span class="float-left">{{ website.name }}</span> -- {{ website.url }}
+
         <span class="float-right">
+             <a class="btn" href="{{ url_for('edit', website_id=website.id) }}">编辑</a>
+
+            <form class="inline-form" method="post" action="{{ url_for('delete', website_id=website.id) }}">
+            <input class="btn" type="submit" name="delete" value="删除" onclick="return confirm('确定要删除吗?')">
+            </form>
+
             <a class="goto" href="{{ website.url }}" target="_blank" title="访问网站">访问</a>
         </span>
         </li>
