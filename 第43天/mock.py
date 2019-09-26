@@ -1,3 +1,5 @@
+from UrlsList import User, db, Website
+
 name = "Lsy"
 
 websites = [
@@ -33,3 +35,19 @@ websites = [
 	},
 
 ]
+
+# 全局的两个变量移动到这个函数内
+
+
+def add_mock_data(name, websites):
+
+	user = User(name=name)
+	db.session.add(user)
+
+	for website in websites:
+		toadd_website = Website(name=website['name'], url=website['url'], info=website['info'])
+		db.session.add(toadd_website)
+
+	db.session.commit()
+
+add_mock_data(name, websites)

@@ -3,13 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>{{ name }} 的网站收藏地</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css">
 </head>
 <body>
- <h2>{{ name }} - 网站收藏区</h2>
+ <h2>
+     <img class="title"  alt="websites" src="{{ url_for('static', filename='images/title.png') }}">
+     {{ name }} - 网站收藏区
+ </h2>
  {# 使用 length 过滤器获取 websites 变量的长度 #}
  <p>收录网站数量： <span style="color: red">{{ websites|length }}</span></p>
 
-<ul>
+<ul class="movie-list">
     {% for website in websites %}
 
         <li>{{ website.name }} -- {{ website.url }}</li>
@@ -18,7 +23,8 @@
 </ul>
 
     <footer>
-        <small>&copy; 2019 <a href="http://lisiyi.top">Lsy</a></small>
+        <div><img class="totoro"  src="{{ url_for('static', filename='images/totoro.gif') }}"></div>
+        <div><small>&copy; 2019 <a href="http://lisiyi.top">Lsy</a></small></div>
     </footer>
 </body>
 </html>

@@ -6,6 +6,18 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+flask-sqlalchemy = "*"
+flask = "*"
+werkzeug = "*"
+jinja2 = "*"
+pip = "*"
+freeze = "*"
+Click = "*"
+itsdangerous = "*"
+MarkupSafe = "*"
+SQLAlchemy= "*"
+Werkzeug= "*"
+
 
 [requires]
 python_version = "3.7"
