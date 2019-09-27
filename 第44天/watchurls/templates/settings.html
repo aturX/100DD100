@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>设置</h3>
+<form  class="login-form" method="post">
+    <label style="display: inline;">用户名</label> <input type="text" name="name" autocomplete="off" required value="{{ current_user.name }}">
+    <input class="btn" type="submit" name="submit" value="保存">
+</form>
+{% endblock %}

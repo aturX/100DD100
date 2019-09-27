@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+coverage = "*"
+
+[packages]
+flask-sqlalchemy = "*"
+flask = "*"
+werkzeug = "*"
+jinja2 = "*"
+pip = "*"
+freeze = "*"
+Click = "*"
+itsdangerous = "*"
+MarkupSafe = "*"
+SQLAlchemy= "*"
+Werkzeug= "*"
+flask-login = "*"
+
+[requires]
+python_version = "3.7"
