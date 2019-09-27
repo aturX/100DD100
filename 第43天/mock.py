@@ -50,4 +50,34 @@ def add_mock_data(name, websites):
 
 	db.session.commit()
 
-add_mock_data(name, websites)
+# add_mock_data(name, websites)
+
+"""
+
+$ flask shell
+>>> from app import db
+>>> db.create_all()
+>>> db.drop_all()
+>>> db.create_all()
+"""
+
+# 创建管理员用户
+def admin(username, password):
+	"""Create user."""
+	db.create_all()
+
+	user = User.query.first()
+	if user is not None:
+		user.username = username
+		user.set_password(password)  # 设置密码
+	else:
+		user = User(username=username, name='Admin')
+		user.set_password(password)  # 设置密码
+		db.session.add(user)
+
+	db.session.commit()  # 提交数据库会话
+
+
+# db.drop_all()  # 清空旧表
+# db.create_all()
+# admin("admin", "admin")
