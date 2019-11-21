@@ -127,13 +127,53 @@ def saveData_CSV(data):
 	finally:
 		csvFile.close()
 
+def saveData_Mysql(data):
+	import pymysql
+	# 连接Mysql
+	# conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock',
+	#                        user='root', passwd=None, db='mysql')
+	# cur = conn.cursor()
+	# cur.execute("USE scraping")
+	# cur.execute("SELECT * FROM pages WHERE id=1")
+	# print(cur.fetchone())
+	# cur.close()
+	# conn.close()
 
+	"""
+	insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl)
+  value(REPLACE(UUID(),'-',''),'https://www.dogedoge.com/','多吉搜索','替代百度的中文搜索引擎','','搜索引擎','100','https://www.dogedoge.com/')
+	"""
 
+	conn = pymysql.connect(host='127.0.0.1',
+	                       user='root', passwd='root', db='mysql')
+	# 使用cursor()方法获取操作游标
+	cur = conn.cursor()
+	insertSQL = "insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl) value(REPLACE(UUID(),'-',''),'{0}','{1}','{2}','','',0,'{3}')"
+	try:
+		# 写入数据
+		for one in data:
+			tempSql= insertSQL.format(one["webUrl"], one["webName"], one["webInfo"], one["fromUrl"])
+			try:
+				cur.execute(tempSql)
+				print("写入成功：" + str(one))
+			except Exception as e:
+				print("写入失败：" + str(one))
+		# 提交
+		conn.commit()
+	except Exception as e:
+		# 错误回滚
+		print(e)
+		conn.rollback()
+	cur.execute("SELECT count(*) FROM searcher_websites")
+	print(cur.fetchone())
+	cur.close()
+	conn.close()
 
 
 if __name__ == "__main__":
 	url = "http://webstack.cc/cn/index.html"
 	# url = "http://www.baidu.com"
 	data = getData(url)
-	print(len(data))
-	saveData_CSV(data)
+	print(data[1])
+	# saveData_CSV(data)
+	saveData_Mysql(data)
