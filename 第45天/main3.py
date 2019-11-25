@@ -31,8 +31,8 @@ def getAlldate():
 		#print(alldate)
 	return alldate
 
-if __name__ == "__main__":
-	csvFile = open("./getalldate.csv", 'w+',  encoding="utf-8", newline='')
+def save_csv():
+	csvFile = open("./getalldate.csv", 'w+', encoding="utf-8", newline='')
 	try:
 		writer = csv.writer(csvFile)
 		writer.writerow(('序号', '网站名称', '网站描述', '网址', '来源'))
@@ -42,3 +42,41 @@ if __name__ == "__main__":
 			i = i + 1
 	finally:
 		csvFile.close()
+
+def save_mysql(data):
+	import pymysql
+
+	"""
+	insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl)
+  value(REPLACE(UUID(),'-',''),'https://www.dogedoge.com/','多吉搜索','替代百度的中文搜索引擎','','搜索引擎','100','https://www.dogedoge.com/')
+	"""
+
+	conn = pymysql.connect(host='127.0.0.1',
+	                       user='root', passwd='root', db='mysql')
+	# 使用cursor()方法获取操作游标
+	cur = conn.cursor()
+	insertSQL = "insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl) value(REPLACE(UUID(),'-',''),'{0}','{1}','{2}','','',0,'{3}')"
+	try:
+		# 写入数据
+		for one in data:
+			tempSql = insertSQL.format(one["webUrl"], one["webName"], one["webInfo"], one["fromUrl"])
+			try:
+				cur.execute(tempSql)
+				print("写入成功：" + str(one))
+			except Exception as e:
+				print("写入失败：" + str(one))
+		# 提交
+		conn.commit()
+	except Exception as e:
+		# 错误回滚
+		print(e)
+		conn.rollback()
+	cur.execute("SELECT count(*) FROM searcher_websites")
+	print(cur.fetchone())
+	cur.close()
+	conn.close()
+
+if __name__ == "__main__":
+	data = getAlldate()
+	print(data)
+	# save_mysql(data)

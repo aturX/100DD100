@@ -50,7 +50,7 @@ def getData(url):
 	body = bs.find_all("body")[0]
 
 	cards = body.findAll("div", {"class": "col-sm-3"})
-	print("数量：" + str(len(cards)))
+	# print("数量：" + str(len(cards)))
 
 	data = []
 	for one in cards:
@@ -64,25 +64,59 @@ def getData(url):
 		website["webName"] = webName
 		website["webInfo"] = webInfo
 		website["webUrl"] = webUrl
-		print(website)
+		website["fromUrl"] = url
+		# print(website)
 		data.append(website)
-		print("*"*10)
+		# print("*"*10)
 	return data
 
 
-if __name__ == "__main__":
-
-
-
-	data = getData("http://maijiadaquan.com/")
-	print(data)
-
+def save_csv(data):
 	import csv
 	csvFile = open("./taobao.csv", 'w+',  encoding="utf-8", newline='')
 	writer = csv.writer(csvFile)
 	writer.writerow(('序号', '网站名称', '网站描述', '网址', '来源'))
 	i = 1
 	for one in data:
-		writer.writerow((i, one["webName"], one["webInfo"], one["webUrl"], "http://maijiadaquan.com/"))
+		writer.writerow((i, one["webName"], one["webInfo"], one["webUrl"], one["fromUrls"]))
 		i = i + 1
 	csvFile.close()
+
+def save_mysql(data):
+	import pymysql
+	"""
+	insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl)
+  value(REPLACE(UUID(),'-',''),'https://www.dogedoge.com/','多吉搜索','替代百度的中文搜索引擎','','搜索引擎','100','https://www.dogedoge.com/')
+	"""
+
+	conn = pymysql.connect(host='127.0.0.1',
+	                       user='root', passwd='root', db='mysql')
+	# 使用cursor()方法获取操作游标
+	cur = conn.cursor()
+	insertSQL = "insert into searcher_websites (id, webUrl,webName,webDoc,webLogo,webType,cent, fromUrl) value(REPLACE(UUID(),'-',''),'{0}','{1}','{2}','','',0,'{3}')"
+	try:
+		# 写入数据
+		for one in data:
+			tempSql = insertSQL.format(one["webUrl"], one["webName"], one["webInfo"], one["fromUrl"])
+			try:
+				cur.execute(tempSql)
+				print("写入成功：" + str(one))
+			except Exception as e:
+				print(e)
+				print("写入失败：" + str(one))
+		# 提交
+		conn.commit()
+	except Exception as e:
+		# 错误回滚
+		print(e)
+		conn.rollback()
+	cur.execute("SELECT count(*) FROM searcher_websites")
+	print(cur.fetchone())
+	cur.close()
+	conn.close()
+
+if __name__ == "__main__":
+
+	data = getData("http://maijiadaquan.com/")
+	print(data)
+	save_mysql(data)
