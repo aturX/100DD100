@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>编辑</h3>
+<form method="post">
+    网站名称 <input type="text" name="name" autocomplete="off" required value="{{ website.name }}">
+    网站网址 <input type="text" name="url" autocomplete="off" required value="{{ website.url }}">
+    <input class="btn" type="submit" name="submit" value="更新">
+</form>
+{% endblock %}

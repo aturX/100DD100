@@ -1,0 +1,561 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for UrlsList.py: 41%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>UrlsList.py</b> :
+            <span class="pc_cov">41%</span>
+        </h1>
+
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+
+        <h2 class="stats">
+            116 statements &nbsp;
+            <span class="run hide_run shortkey_r button_toggle_run">47 run</span>
+            <span class="mis shortkey_m button_toggle_mis">69 missing</span>
+            <span class="exc shortkey_x button_toggle_exc">0 excluded</span>
+
+            
+        </h2>
+    </div>
+</div>
+
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+
+<div id="source">
+    <table>
+        <tr>
+            <td class="linenos">
+<p id="n1" class="pln"><a href="#n1">1</a></p>
+<p id="n2" class="pln"><a href="#n2">2</a></p>
+<p id="n3" class="pln"><a href="#n3">3</a></p>
+<p id="n4" class="pln"><a href="#n4">4</a></p>
+<p id="n5" class="pln"><a href="#n5">5</a></p>
+<p id="n6" class="pln"><a href="#n6">6</a></p>
+<p id="n7" class="pln"><a href="#n7">7</a></p>
+<p id="n8" class="pln"><a href="#n8">8</a></p>
+<p id="n9" class="pln"><a href="#n9">9</a></p>
+<p id="n10" class="pln"><a href="#n10">10</a></p>
+<p id="n11" class="pln"><a href="#n11">11</a></p>
+<p id="n12" class="pln"><a href="#n12">12</a></p>
+<p id="n13" class="pln"><a href="#n13">13</a></p>
+<p id="n14" class="pln"><a href="#n14">14</a></p>
+<p id="n15" class="pln"><a href="#n15">15</a></p>
+<p id="n16" class="pln"><a href="#n16">16</a></p>
+<p id="n17" class="pln"><a href="#n17">17</a></p>
+<p id="n18" class="pln"><a href="#n18">18</a></p>
+<p id="n19" class="pln"><a href="#n19">19</a></p>
+<p id="n20" class="pln"><a href="#n20">20</a></p>
+<p id="n21" class="pln"><a href="#n21">21</a></p>
+<p id="n22" class="pln"><a href="#n22">22</a></p>
+<p id="n23" class="pln"><a href="#n23">23</a></p>
+<p id="n24" class="pln"><a href="#n24">24</a></p>
+<p id="n25" class="pln"><a href="#n25">25</a></p>
+<p id="n26" class="pln"><a href="#n26">26</a></p>
+<p id="n27" class="pln"><a href="#n27">27</a></p>
+<p id="n28" class="pln"><a href="#n28">28</a></p>
+<p id="n29" class="pln"><a href="#n29">29</a></p>
+<p id="n30" class="pln"><a href="#n30">30</a></p>
+<p id="n31" class="pln"><a href="#n31">31</a></p>
+<p id="n32" class="pln"><a href="#n32">32</a></p>
+<p id="n33" class="pln"><a href="#n33">33</a></p>
+<p id="n34" class="pln"><a href="#n34">34</a></p>
+<p id="n35" class="pln"><a href="#n35">35</a></p>
+<p id="n36" class="pln"><a href="#n36">36</a></p>
+<p id="n37" class="pln"><a href="#n37">37</a></p>
+<p id="n38" class="stm run hide_run"><a href="#n38">38</a></p>
+<p id="n39" class="stm run hide_run"><a href="#n39">39</a></p>
+<p id="n40" class="pln"><a href="#n40">40</a></p>
+<p id="n41" class="stm run hide_run"><a href="#n41">41</a></p>
+<p id="n42" class="stm run hide_run"><a href="#n42">42</a></p>
+<p id="n43" class="stm run hide_run"><a href="#n43">43</a></p>
+<p id="n44" class="pln"><a href="#n44">44</a></p>
+<p id="n45" class="pln"><a href="#n45">45</a></p>
+<p id="n46" class="stm run hide_run"><a href="#n46">46</a></p>
+<p id="n47" class="stm run hide_run"><a href="#n47">47</a></p>
+<p id="n48" class="pln"><a href="#n48">48</a></p>
+<p id="n49" class="pln"><a href="#n49">49</a></p>
+<p id="n50" class="stm run hide_run"><a href="#n50">50</a></p>
+<p id="n51" class="pln"><a href="#n51">51</a></p>
+<p id="n52" class="pln"><a href="#n52">52</a></p>
+<p id="n53" class="stm run hide_run"><a href="#n53">53</a></p>
+<p id="n54" class="stm run hide_run"><a href="#n54">54</a></p>
+<p id="n55" class="stm run hide_run"><a href="#n55">55</a></p>
+<p id="n56" class="pln"><a href="#n56">56</a></p>
+<p id="n57" class="stm mis"><a href="#n57">57</a></p>
+<p id="n58" class="stm run hide_run"><a href="#n58">58</a></p>
+<p id="n59" class="stm run hide_run"><a href="#n59">59</a></p>
+<p id="n60" class="stm run hide_run"><a href="#n60">60</a></p>
+<p id="n61" class="stm run hide_run"><a href="#n61">61</a></p>
+<p id="n62" class="pln"><a href="#n62">62</a></p>
+<p id="n63" class="stm run hide_run"><a href="#n63">63</a></p>
+<p id="n64" class="stm run hide_run"><a href="#n64">64</a></p>
+<p id="n65" class="stm run hide_run"><a href="#n65">65</a></p>
+<p id="n66" class="pln"><a href="#n66">66</a></p>
+<p id="n67" class="stm run hide_run"><a href="#n67">67</a></p>
+<p id="n68" class="stm run hide_run"><a href="#n68">68</a></p>
+<p id="n69" class="pln"><a href="#n69">69</a></p>
+<p id="n70" class="pln"><a href="#n70">70</a></p>
+<p id="n71" class="stm run hide_run"><a href="#n71">71</a></p>
+<p id="n72" class="pln"><a href="#n72">72</a></p>
+<p id="n73" class="stm run hide_run"><a href="#n73">73</a></p>
+<p id="n74" class="stm run hide_run"><a href="#n74">74</a></p>
+<p id="n75" class="stm run hide_run"><a href="#n75">75</a></p>
+<p id="n76" class="stm run hide_run"><a href="#n76">76</a></p>
+<p id="n77" class="pln"><a href="#n77">77</a></p>
+<p id="n78" class="pln"><a href="#n78">78</a></p>
+<p id="n79" class="stm run hide_run"><a href="#n79">79</a></p>
+<p id="n80" class="stm mis"><a href="#n80">80</a></p>
+<p id="n81" class="pln"><a href="#n81">81</a></p>
+<p id="n82" class="stm run hide_run"><a href="#n82">82</a></p>
+<p id="n83" class="stm mis"><a href="#n83">83</a></p>
+<p id="n84" class="pln"><a href="#n84">84</a></p>
+<p id="n85" class="pln"><a href="#n85">85</a></p>
+<p id="n86" class="stm run hide_run"><a href="#n86">86</a></p>
+<p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
+<p id="n88" class="stm run hide_run"><a href="#n88">88</a></p>
+<p id="n89" class="stm run hide_run"><a href="#n89">89</a></p>
+<p id="n90" class="stm run hide_run"><a href="#n90">90</a></p>
+<p id="n91" class="pln"><a href="#n91">91</a></p>
+<p id="n92" class="pln"><a href="#n92">92</a></p>
+<p id="n93" class="pln"><a href="#n93">93</a></p>
+<p id="n94" class="stm run hide_run"><a href="#n94">94</a></p>
+<p id="n95" class="pln"><a href="#n95">95</a></p>
+<p id="n96" class="stm mis"><a href="#n96">96</a></p>
+<p id="n97" class="stm mis"><a href="#n97">97</a></p>
+<p id="n98" class="pln"><a href="#n98">98</a></p>
+<p id="n99" class="pln"><a href="#n99">99</a></p>
+<p id="n100" class="pln"><a href="#n100">100</a></p>
+<p id="n101" class="pln"><a href="#n101">101</a></p>
+<p id="n102" class="pln"><a href="#n102">102</a></p>
+<p id="n103" class="pln"><a href="#n103">103</a></p>
+<p id="n104" class="pln"><a href="#n104">104</a></p>
+<p id="n105" class="stm run hide_run"><a href="#n105">105</a></p>
+<p id="n106" class="pln"><a href="#n106">106</a></p>
+<p id="n107" class="pln"><a href="#n107">107</a></p>
+<p id="n108" class="pln"><a href="#n108">108</a></p>
+<p id="n109" class="pln"><a href="#n109">109</a></p>
+<p id="n110" class="pln"><a href="#n110">110</a></p>
+<p id="n111" class="stm mis"><a href="#n111">111</a></p>
+<p id="n112" class="pln"><a href="#n112">112</a></p>
+<p id="n113" class="stm mis"><a href="#n113">113</a></p>
+<p id="n114" class="pln"><a href="#n114">114</a></p>
+<p id="n115" class="pln"><a href="#n115">115</a></p>
+<p id="n116" class="stm run hide_run"><a href="#n116">116</a></p>
+<p id="n117" class="stm run hide_run"><a href="#n117">117</a></p>
+<p id="n118" class="pln"><a href="#n118">118</a></p>
+<p id="n119" class="pln"><a href="#n119">119</a></p>
+<p id="n120" class="stm mis"><a href="#n120">120</a></p>
+<p id="n121" class="stm mis"><a href="#n121">121</a></p>
+<p id="n122" class="stm mis"><a href="#n122">122</a></p>
+<p id="n123" class="stm mis"><a href="#n123">123</a></p>
+<p id="n124" class="stm mis"><a href="#n124">124</a></p>
+<p id="n125" class="pln"><a href="#n125">125</a></p>
+<p id="n126" class="stm mis"><a href="#n126">126</a></p>
+<p id="n127" class="stm mis"><a href="#n127">127</a></p>
+<p id="n128" class="stm mis"><a href="#n128">128</a></p>
+<p id="n129" class="pln"><a href="#n129">129</a></p>
+<p id="n130" class="stm mis"><a href="#n130">130</a></p>
+<p id="n131" class="stm mis"><a href="#n131">131</a></p>
+<p id="n132" class="stm mis"><a href="#n132">132</a></p>
+<p id="n133" class="stm mis"><a href="#n133">133</a></p>
+<p id="n134" class="stm mis"><a href="#n134">134</a></p>
+<p id="n135" class="pln"><a href="#n135">135</a></p>
+<p id="n136" class="stm mis"><a href="#n136">136</a></p>
+<p id="n137" class="stm mis"><a href="#n137">137</a></p>
+<p id="n138" class="pln"><a href="#n138">138</a></p>
+<p id="n139" class="pln"><a href="#n139">139</a></p>
+<p id="n140" class="stm run hide_run"><a href="#n140">140</a></p>
+<p id="n141" class="pln"><a href="#n141">141</a></p>
+<p id="n142" class="pln"><a href="#n142">142</a></p>
+<p id="n143" class="stm mis"><a href="#n143">143</a></p>
+<p id="n144" class="pln"><a href="#n144">144</a></p>
+<p id="n145" class="pln"><a href="#n145">145</a></p>
+<p id="n146" class="pln"><a href="#n146">146</a></p>
+<p id="n147" class="pln"><a href="#n147">147</a></p>
+<p id="n148" class="stm run hide_run"><a href="#n148">148</a></p>
+<p id="n149" class="stm run hide_run"><a href="#n149">149</a></p>
+<p id="n150" class="pln"><a href="#n150">150</a></p>
+<p id="n151" class="stm mis"><a href="#n151">151</a></p>
+<p id="n152" class="pln"><a href="#n152">152</a></p>
+<p id="n153" class="stm mis"><a href="#n153">153</a></p>
+<p id="n154" class="stm mis"><a href="#n154">154</a></p>
+<p id="n155" class="stm mis"><a href="#n155">155</a></p>
+<p id="n156" class="stm mis"><a href="#n156">156</a></p>
+<p id="n157" class="stm mis"><a href="#n157">157</a></p>
+<p id="n158" class="stm mis"><a href="#n158">158</a></p>
+<p id="n159" class="pln"><a href="#n159">159</a></p>
+<p id="n160" class="stm mis"><a href="#n160">160</a></p>
+<p id="n161" class="stm mis"><a href="#n161">161</a></p>
+<p id="n162" class="stm mis"><a href="#n162">162</a></p>
+<p id="n163" class="stm mis"><a href="#n163">163</a></p>
+<p id="n164" class="stm mis"><a href="#n164">164</a></p>
+<p id="n165" class="pln"><a href="#n165">165</a></p>
+<p id="n166" class="stm mis"><a href="#n166">166</a></p>
+<p id="n167" class="pln"><a href="#n167">167</a></p>
+<p id="n168" class="pln"><a href="#n168">168</a></p>
+<p id="n169" class="stm run hide_run"><a href="#n169">169</a></p>
+<p id="n170" class="stm run hide_run"><a href="#n170">170</a></p>
+<p id="n171" class="pln"><a href="#n171">171</a></p>
+<p id="n172" class="stm mis"><a href="#n172">172</a></p>
+<p id="n173" class="stm mis"><a href="#n173">173</a></p>
+<p id="n174" class="stm mis"><a href="#n174">174</a></p>
+<p id="n175" class="stm mis"><a href="#n175">175</a></p>
+<p id="n176" class="stm mis"><a href="#n176">176</a></p>
+<p id="n177" class="pln"><a href="#n177">177</a></p>
+<p id="n178" class="pln"><a href="#n178">178</a></p>
+<p id="n179" class="pln"><a href="#n179">179</a></p>
+<p id="n180" class="pln"><a href="#n180">180</a></p>
+<p id="n181" class="stm run hide_run"><a href="#n181">181</a></p>
+<p id="n182" class="pln"><a href="#n182">182</a></p>
+<p id="n183" class="stm mis"><a href="#n183">183</a></p>
+<p id="n184" class="stm mis"><a href="#n184">184</a></p>
+<p id="n185" class="stm mis"><a href="#n185">185</a></p>
+<p id="n186" class="pln"><a href="#n186">186</a></p>
+<p id="n187" class="stm mis"><a href="#n187">187</a></p>
+<p id="n188" class="stm mis"><a href="#n188">188</a></p>
+<p id="n189" class="stm mis"><a href="#n189">189</a></p>
+<p id="n190" class="pln"><a href="#n190">190</a></p>
+<p id="n191" class="stm mis"><a href="#n191">191</a></p>
+<p id="n192" class="pln"><a href="#n192">192</a></p>
+<p id="n193" class="stm mis"><a href="#n193">193</a></p>
+<p id="n194" class="stm mis"><a href="#n194">194</a></p>
+<p id="n195" class="stm mis"><a href="#n195">195</a></p>
+<p id="n196" class="stm mis"><a href="#n196">196</a></p>
+<p id="n197" class="stm mis"><a href="#n197">197</a></p>
+<p id="n198" class="stm mis"><a href="#n198">198</a></p>
+<p id="n199" class="pln"><a href="#n199">199</a></p>
+<p id="n200" class="stm mis"><a href="#n200">200</a></p>
+<p id="n201" class="pln"><a href="#n201">201</a></p>
+<p id="n202" class="pln"><a href="#n202">202</a></p>
+<p id="n203" class="stm run hide_run"><a href="#n203">203</a></p>
+<p id="n204" class="stm run hide_run"><a href="#n204">204</a></p>
+<p id="n205" class="pln"><a href="#n205">205</a></p>
+<p id="n206" class="stm mis"><a href="#n206">206</a></p>
+<p id="n207" class="stm mis"><a href="#n207">207</a></p>
+<p id="n208" class="stm mis"><a href="#n208">208</a></p>
+<p id="n209" class="pln"><a href="#n209">209</a></p>
+<p id="n210" class="pln"><a href="#n210">210</a></p>
+<p id="n211" class="pln"><a href="#n211">211</a></p>
+<p id="n212" class="stm run hide_run"><a href="#n212">212</a></p>
+<p id="n213" class="stm run hide_run"><a href="#n213">213</a></p>
+<p id="n214" class="pln"><a href="#n214">214</a></p>
+<p id="n215" class="stm mis"><a href="#n215">215</a></p>
+<p id="n216" class="stm mis"><a href="#n216">216</a></p>
+<p id="n217" class="pln"><a href="#n217">217</a></p>
+<p id="n218" class="stm mis"><a href="#n218">218</a></p>
+<p id="n219" class="stm mis"><a href="#n219">219</a></p>
+<p id="n220" class="stm mis"><a href="#n220">220</a></p>
+<p id="n221" class="pln"><a href="#n221">221</a></p>
+<p id="n222" class="stm mis"><a href="#n222">222</a></p>
+<p id="n223" class="pln"><a href="#n223">223</a></p>
+<p id="n224" class="pln"><a href="#n224">224</a></p>
+<p id="n225" class="pln"><a href="#n225">225</a></p>
+<p id="n226" class="pln"><a href="#n226">226</a></p>
+<p id="n227" class="stm mis"><a href="#n227">227</a></p>
+<p id="n228" class="stm mis"><a href="#n228">228</a></p>
+<p id="n229" class="stm mis"><a href="#n229">229</a></p>
+<p id="n230" class="stm mis"><a href="#n230">230</a></p>
+<p id="n231" class="pln"><a href="#n231">231</a></p>
+<p id="n232" class="pln"><a href="#n232">232</a></p>
+<p id="n233" class="pln"><a href="#n233">233</a></p>
+<p id="n234" class="pln"><a href="#n234">234</a></p>
+<p id="n235" class="stm run hide_run"><a href="#n235">235</a></p>
+<p id="n236" class="stm mis"><a href="#n236">236</a></p>
+
+            </td>
+            <td class="text">
+<p id="t1" class="pln"><span class="str">"""</span><span class="strut">&nbsp;</span></p>
+<p id="t2" class="pln"><span class="str">Flask &#20837;&#38376;&#39033;&#30446;&#65306;</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">&#32593;&#31449;&#20869;&#23481;&#20449;&#24687;&#23637;&#31034; UrlsList</span><span class="strut">&nbsp;</span></p>
+<p id="t4" class="pln"><span class="str">&#21442;&#32771;&#65306;  http://watchlist.helloflask.com/</span><span class="strut">&nbsp;</span></p>
+<p id="t5" class="pln"><span class="str">&#25945;&#31243;&#65306; https://read.helloflask.com/c1-ready</span><span class="strut">&nbsp;</span></p>
+<p id="t6" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t7" class="pln"><span class="str">Done - &#23436;&#25104;</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="pln"><span class="str">- &#23436;&#25104;  &#27983;&#35272;&#22120; &#32534;&#36753;&#22120; &#24320;&#21457;&#24037;&#20855; &#65306; Chrome  + Pycharm + Python3.7 + Flask + Pipenv + Git + Linux &#65288;Vim&#65289;</span><span class="strut">&nbsp;</span></p>
+<p id="t9" class="pln"><span class="str">- &#23436;&#25104;  &#37197;&#32622;&#34394;&#25311;&#29615;&#22659; &#23433;&#35013;web&#26694;&#26550;  &#25552;&#20132;&#20195;&#30721;&#29256;&#26412;&#25511;&#21046; &#65306; Pipenv + Flask + GitHub</span><span class="strut">&nbsp;</span></p>
+<p id="t10" class="pln"><span class="str">- &#23436;&#25104;  &#37197;&#32622;Flask &#30340;&#37197;&#32622;&#25991;&#20214; .env .flaskenv  &#20351;&#29992; python-dotenv</span><span class="strut">&nbsp;</span></p>
+<p id="t11" class="pln"><span class="str">- &#23436;&#25104;  &#20351;&#29992;&#27169;&#26495;&#22522;&#30784; &#65306; &#27169;&#26495;&#22522;&#26412;&#35821;&#27861;</span><span class="strut">&nbsp;</span></p>
+<p id="t12" class="pln"><span class="str">- &#23436;&#25104;  &#32534;&#20889;&#20027;&#39029;&#27169;&#26495;</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="pln"><span class="str">- &#23436;&#25104;  &#20934;&#22791;&#34394;&#25311;&#25968;&#25454;</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="pln"><span class="str">- &#23436;&#25104;  &#28210;&#26579;&#20027;&#39029;&#27169;&#26495;</span><span class="strut">&nbsp;</span></p>
+<p id="t15" class="pln"><span class="str">- &#23436;&#25104;  &#36830;&#25509;&#20351;&#29992;&#25968;&#25454;&#24211;</span><span class="strut">&nbsp;</span></p>
+<p id="t16" class="pln"><span class="str">- &#23436;&#25104;  &#20351;&#29992;ORM&#26694;&#26550;SQLAlchemy</span><span class="strut">&nbsp;</span></p>
+<p id="t17" class="pln"><span class="str">- &#23436;&#25104;  &#21019;&#24314;&#34920;&#26144;&#23556; &#31867;class</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln"><span class="str">- &#23436;&#25104;  &#27169;&#26495;&#19978;&#19979;&#25991;&#29615;&#22659;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">- &#23436;&#25104;  &#27169;&#26495;&#32487;&#25215;&#26426;&#21046;</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="str">- &#23436;&#25104;  &#34920;&#21333;&#25552;&#20132; &#30331;&#24405;&#21151;&#33021;</span><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">- &#23436;&#25104;  &#28040;&#24687;&#21453;&#39304;</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">- &#23436;&#25104;  &#32534;&#36753;&#26465;&#30446; &#28155;&#21152;&#20869;&#23481;</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="str">- &#23436;&#25104;  &#21024;&#38500;&#26465;&#30446;</span><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">- &#23436;&#25104;  &#23433;&#20840;&#23384;&#20648;&#23494;&#30721;</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">- &#23436;&#25104;  &#29983;&#25104;&#31649;&#29702;&#21592;&#36134;&#25143;</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="str">- &#23436;&#25104;  &#20351;&#29992;Flask-Login &#23454;&#29616;&#29992;&#25143;&#35748;&#35777;</span><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">- &#23436;&#25104;  &#30331;&#24405;&#30331;&#20986;&#21151;&#33021;&#23454;&#29616;</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">- &#23436;&#25104;  &#35748;&#35777;&#20445;&#25252;</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="str">TODO - &#24453;&#21150;</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">-</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">"""</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="stm run hide_run"><span class="key">import</span> <span class="nam">os</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="stm run hide_run"><span class="key">import</span> <span class="nam">sys</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t41" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask</span> <span class="key">import</span> <span class="nam">Flask</span><span class="op">,</span> <span class="nam">render_template</span><span class="op">,</span> <span class="nam">request</span><span class="op">,</span> <span class="nam">flash</span><span class="op">,</span> <span class="nam">url_for</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask_login</span> <span class="key">import</span> <span class="nam">LoginManager</span><span class="op">,</span> <span class="nam">login_user</span><span class="op">,</span> <span class="nam">logout_user</span><span class="op">,</span> <span class="nam">login_required</span><span class="op">,</span> <span class="nam">current_user</span><span class="op">,</span> <span class="nam">UserMixin</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask_sqlalchemy</span> <span class="key">import</span> <span class="nam">SQLAlchemy</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t45" class="pln"><span class="com"># &#20851;&#20110;&#25968;&#25454;&#24211;&#30340;&#37197;&#32622; &#21450;&#21021;&#22987;&#21270;</span><span class="strut">&nbsp;</span></p>
+<p id="t46" class="stm run hide_run"><span class="key">from</span> <span class="nam">werkzeug</span><span class="op">.</span><span class="nam">security</span> <span class="key">import</span> <span class="nam">generate_password_hash</span><span class="op">,</span> <span class="nam">check_password_hash</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="stm run hide_run"><span class="key">from</span> <span class="nam">werkzeug</span><span class="op">.</span><span class="nam">utils</span> <span class="key">import</span> <span class="nam">redirect</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t50" class="stm run hide_run"><span class="key">def</span> <span class="nam">init_db</span><span class="op">(</span><span class="nam">app</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln">        <span class="com"># ORM &#26694;&#26550;</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln">        <span class="com"># sqlite &#30340;&#20889;&#27861;  sqlite:////&#25968;&#25454;&#24211;&#25991;&#20214;&#30340;&#32477;&#23545;&#22320;&#22336;&#65288;Linux&#65289;  sqlite:///&#25968;&#25454;&#24211;&#25991;&#20214;&#30340;&#32477;&#23545;&#22320;&#22336; &#65288;windows&#65289;</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="stm run hide_run">        <span class="nam">WIN</span> <span class="op">=</span> <span class="nam">sys</span><span class="op">.</span><span class="nam">platform</span><span class="op">.</span><span class="nam">startswith</span><span class="op">(</span><span class="str">'win'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="stm run hide_run">        <span class="key">if</span> <span class="nam">WIN</span><span class="op">:</span>  <span class="com"># &#22914;&#26524;&#26159; Windows &#31995;&#32479;&#65292;&#20351;&#29992;&#19977;&#20010;&#26012;&#32447;</span><span class="strut">&nbsp;</span></p>
+<p id="t55" class="stm run hide_run">                <span class="nam">prefix</span> <span class="op">=</span> <span class="str">'sqlite:///'</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="pln">        <span class="key">else</span><span class="op">:</span>  <span class="com"># &#21542;&#21017;&#20351;&#29992;&#22235;&#20010;&#26012;&#32447;</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="stm mis">                <span class="nam">prefix</span> <span class="op">=</span> <span class="str">'sqlite:////'</span><span class="strut">&nbsp;</span></p>
+<p id="t58" class="stm run hide_run">        <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">[</span><span class="str">'SQLALCHEMY_DATABASE_URI'</span><span class="op">]</span> <span class="op">=</span> <span class="nam">prefix</span> <span class="op">+</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">app</span><span class="op">.</span><span class="nam">root_path</span><span class="op">,</span> <span class="str">'db/data.db'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t59" class="stm run hide_run">        <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">[</span><span class="str">'SQLALCHEMY_TRACK_MODIFICATIONS'</span><span class="op">]</span> <span class="op">=</span> <span class="key">False</span>  <span class="com"># &#20851;&#38381;&#23545;&#27169;&#22411;&#20462;&#25913;&#30340;&#30417;&#25511;</span><span class="strut">&nbsp;</span></p>
+<p id="t60" class="stm run hide_run">        <span class="nam">db</span> <span class="op">=</span> <span class="nam">SQLAlchemy</span><span class="op">(</span><span class="nam">app</span><span class="op">)</span>  <span class="com"># &#21021;&#22987;&#21270;&#25193;&#23637;&#65292;&#20256;&#20837;&#31243;&#24207;&#23454;&#20363; app</span><span class="strut">&nbsp;</span></p>
+<p id="t61" class="stm run hide_run">        <span class="key">return</span> <span class="nam">db</span><span class="strut">&nbsp;</span></p>
+<p id="t62" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t63" class="stm run hide_run"><span class="nam">app</span> <span class="op">=</span> <span class="nam">Flask</span><span class="op">(</span><span class="nam">__name__</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t64" class="stm run hide_run"><span class="nam">app</span><span class="op">.</span><span class="nam">secret_key</span> <span class="op">=</span> <span class="str">"adfaksdhfk^&amp;*^(%&amp;^%"</span><span class="strut">&nbsp;</span></p>
+<p id="t65" class="stm run hide_run"><span class="nam">db</span> <span class="op">=</span> <span class="nam">init_db</span><span class="op">(</span><span class="nam">app</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t66" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t67" class="stm run hide_run"><span class="nam">login_manager</span> <span class="op">=</span> <span class="nam">LoginManager</span><span class="op">(</span><span class="nam">app</span><span class="op">)</span>  <span class="com"># &#23454;&#20363;&#21270;&#25193;&#23637;&#31867;</span><span class="strut">&nbsp;</span></p>
+<p id="t68" class="stm run hide_run"><span class="nam">login_manager</span><span class="op">.</span><span class="nam">login_view</span> <span class="op">=</span> <span class="str">'login'</span>   <span class="com"># &#30331;&#24405;&#35270;&#22270;&#31471;&#28857;&#65288;&#20989;&#25968;&#21517;&#65289;</span><span class="strut">&nbsp;</span></p>
+<p id="t69" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t70" class="pln"><span class="com"># &#29992;&#25143;&#27169;&#22411;</span><span class="strut">&nbsp;</span></p>
+<p id="t71" class="stm run hide_run"><span class="key">class</span> <span class="nam">User</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">Model</span><span class="op">,</span><span class="nam">UserMixin</span><span class="op">)</span><span class="op">:</span>   <span class="com"># &#34920;&#21517;&#23558;&#20250;&#26159; user&#65288;&#33258;&#21160;&#29983;&#25104;&#65292;&#23567;&#20889;&#22788;&#29702;&#65289;</span><span class="strut">&nbsp;</span></p>
+<p id="t72" class="pln">        <span class="com"># &#20027;&#38190; id</span><span class="strut">&nbsp;</span></p>
+<p id="t73" class="stm run hide_run">        <span class="nam">id</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">Integer</span><span class="op">,</span> <span class="nam">primary_key</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>  <span class="com"># &#20027;&#38190;</span><span class="strut">&nbsp;</span></p>
+<p id="t74" class="stm run hide_run">        <span class="nam">name</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">20</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#21517;&#23383;</span><span class="strut">&nbsp;</span></p>
+<p id="t75" class="stm run hide_run">        <span class="nam">username</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">20</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#29992;&#25143;&#21517;</span><span class="strut">&nbsp;</span></p>
+<p id="t76" class="stm run hide_run">        <span class="nam">password_hash</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">128</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#23494;&#30721;&#25955;&#21015;&#20540;</span><span class="strut">&nbsp;</span></p>
+<p id="t77" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t78" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t79" class="stm run hide_run">        <span class="key">def</span> <span class="nam">set_password</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">password</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t80" class="stm mis">                <span class="nam">self</span><span class="op">.</span><span class="nam">password_hash</span> <span class="op">=</span> <span class="nam">generate_password_hash</span><span class="op">(</span><span class="nam">password</span><span class="op">)</span>  <span class="com"># &#23558;&#29983;&#25104;&#30340;&#23494;&#30721;&#20445;&#25345;&#21040;&#23545;&#24212;&#23383;&#27573;</span><span class="strut">&nbsp;</span></p>
+<p id="t81" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t82" class="stm run hide_run">        <span class="key">def</span> <span class="nam">validate_password</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">password</span><span class="op">)</span><span class="op">:</span>  <span class="com"># &#29992;&#20110;&#39564;&#35777;&#23494;&#30721;&#30340;&#26041;&#27861;&#65292;&#25509;&#21463;&#23494;&#30721;&#20316;&#20026;&#21442;&#25968;</span><span class="strut">&nbsp;</span></p>
+<p id="t83" class="stm mis">                <span class="key">return</span> <span class="nam">check_password_hash</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">password_hash</span><span class="op">,</span> <span class="nam">password</span><span class="op">)</span>  <span class="com"># &#36820;&#22238;&#24067;&#23572;&#20540;</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t85" class="pln"><span class="com"># &#32593;&#31449;&#20449;&#24687;&#27169;&#22411;</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="stm run hide_run"><span class="key">class</span> <span class="nam">Website</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">Model</span><span class="op">)</span><span class="op">:</span>  <span class="com"># &#34920;&#26126; website</span><span class="strut">&nbsp;</span></p>
+<p id="t87" class="stm run hide_run">        <span class="nam">id</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">Integer</span><span class="op">,</span> <span class="nam">primary_key</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>  <span class="com"># &#20027;&#38190;</span><span class="strut">&nbsp;</span></p>
+<p id="t88" class="stm run hide_run">        <span class="nam">name</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">40</span><span class="op">)</span><span class="op">)</span>   <span class="com"># &#32593;&#31449;&#21517;&#23383;</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm run hide_run">        <span class="nam">url</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">128</span><span class="op">)</span><span class="op">)</span>   <span class="com"># &#32593;&#22336;</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="stm run hide_run">        <span class="nam">info</span> <span class="op">=</span> <span class="nam">db</span><span class="op">.</span><span class="nam">Column</span><span class="op">(</span><span class="nam">db</span><span class="op">.</span><span class="nam">String</span><span class="op">(</span><span class="num">128</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#20171;&#32461;&#20449;&#24687;</span><span class="strut">&nbsp;</span></p>
+<p id="t91" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t92" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t93" class="pln"><span class="com"># &#29992;&#25143;&#21152;&#36733;&#22238;&#35843;&#20989;&#25968;</span><span class="strut">&nbsp;</span></p>
+<p id="t94" class="stm run hide_run"><span class="op">@</span><span class="nam">login_manager</span><span class="op">.</span><span class="nam">user_loader</span><span class="strut">&nbsp;</span></p>
+<p id="t95" class="pln"><span class="key">def</span> <span class="nam">load_user</span><span class="op">(</span><span class="nam">user_id</span><span class="op">)</span><span class="op">:</span>  <span class="com"># &#21019;&#24314;&#29992;&#25143;&#21152;&#36733;&#22238;&#35843;&#20989;&#25968;&#65292;&#25509;&#21463;&#29992;&#25143; ID &#20316;&#20026;&#21442;&#25968;</span><span class="strut">&nbsp;</span></p>
+<p id="t96" class="stm mis">        <span class="nam">user</span> <span class="op">=</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">int</span><span class="op">(</span><span class="nam">user_id</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#29992; ID &#20316;&#20026; User &#27169;&#22411;&#30340;&#20027;&#38190;&#26597;&#35810;&#23545;&#24212;&#30340;&#29992;&#25143;</span><span class="strut">&nbsp;</span></p>
+<p id="t97" class="stm mis">        <span class="key">return</span> <span class="nam">user</span>   <span class="com"># &#36820;&#22238;&#29992;&#25143;&#23545;&#35937;</span><span class="strut">&nbsp;</span></p>
+<p id="t98" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t99" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t100" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t101" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t102" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t103" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t104" class="pln"><span class="com"># &#27169;&#26495;&#19978;&#19979;&#25991;&#20989;&#25968;</span><span class="strut">&nbsp;</span></p>
+<p id="t105" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">context_processor</span><span class="strut">&nbsp;</span></p>
+<p id="t106" class="pln"><span class="key">def</span> <span class="nam">now_user</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>  <span class="com"># &#20989;&#25968;&#21517;&#21487;&#20197;&#38543;&#24847;&#20462;&#25913;</span><span class="strut">&nbsp;</span></p>
+<p id="t107" class="pln">        <span class="str">"""</span><span class="strut">&nbsp;</span></p>
+<p id="t108" class="pln"><span class="str">        &#36825;&#20010;&#20989;&#25968;&#36820;&#22238;&#30340;&#21464;&#37327;&#65288;&#20197;&#23383;&#20856;&#38190;&#20540;&#23545;&#30340;&#24418;&#24335;&#65289;&#23558;&#20250;&#32479;&#19968;&#27880;&#20837;&#21040;&#27599;&#19968;&#20010;&#27169;&#26495;&#30340;&#19978;&#19979;&#25991;&#29615;&#22659;&#20013;&#65292;&#22240;&#27492;&#21487;&#20197;&#30452;&#25509;&#22312;&#27169;&#26495;&#20013;&#20351;&#29992;</span><span class="strut">&nbsp;</span></p>
+<p id="t109" class="pln"><span class="str">        :return:</span><span class="strut">&nbsp;</span></p>
+<p id="t110" class="pln"><span class="str">        """</span><span class="strut">&nbsp;</span></p>
+<p id="t111" class="stm mis">        <span class="nam">user</span> <span class="op">=</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t112" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t113" class="stm mis">        <span class="key">return</span> <span class="nam">dict</span><span class="op">(</span><span class="nam">user</span><span class="op">=</span><span class="nam">user</span><span class="op">.</span><span class="nam">name</span><span class="op">)</span>  <span class="com"># &#38656;&#35201;&#36820;&#22238;&#23383;&#20856;&#65292;&#31561;&#21516;&#20110;return {'user': user}</span><span class="strut">&nbsp;</span></p>
+<p id="t114" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t115" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t116" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'GET'</span><span class="op">,</span> <span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t117" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/index'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'GET'</span><span class="op">,</span> <span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t118" class="pln"><span class="key">def</span> <span class="nam">index</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t119" class="pln">        <span class="com"># &#35835;&#21462;&#25968;&#25454;&#24211;</span><span class="strut">&nbsp;</span></p>
+<p id="t120" class="stm mis">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">method</span> <span class="op">==</span> <span class="str">'POST'</span><span class="op">:</span>  <span class="com"># &#21028;&#26029;&#26159;&#21542;&#26159; POST &#35831;&#27714;</span><span class="strut">&nbsp;</span></p>
+<p id="t121" class="stm mis">                <span class="key">if</span> <span class="key">not</span> <span class="nam">current_user</span><span class="op">.</span><span class="nam">is_authenticated</span><span class="op">:</span>  <span class="com"># &#22914;&#26524;&#24403;&#21069;&#29992;&#25143;&#26410;&#35748;&#35777;</span><span class="strut">&nbsp;</span></p>
+<p id="t122" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#21040;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t123" class="stm mis">                <span class="nam">name</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'name'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t124" class="stm mis">                <span class="nam">url</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'url'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t125" class="pln">                <span class="com"># &#39564;&#35777;&#25968;&#25454;</span><span class="strut">&nbsp;</span></p>
+<p id="t126" class="stm mis">                <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">name</span><span class="op">)</span> <span class="op">&lt;</span> <span class="num">1</span> <span class="key">or</span> <span class="nam">len</span><span class="op">(</span><span class="nam">url</span><span class="op">)</span> <span class="op">&lt;</span> <span class="num">1</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t127" class="stm mis">                        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#20449;&#24687;&#22635;&#20889;&#38169;&#35823;&#65281;'</span><span class="op">)</span>  <span class="com"># &#26174;&#31034;&#38169;&#35823;&#25552;&#31034;</span><span class="strut">&nbsp;</span></p>
+<p id="t128" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t129" class="pln">                <span class="com"># &#20445;&#23384;&#34920;&#21333;&#25968;&#25454;&#21040;&#25968;&#25454;&#24211;</span><span class="strut">&nbsp;</span></p>
+<p id="t130" class="stm mis">                <span class="nam">website</span> <span class="op">=</span> <span class="nam">Website</span><span class="op">(</span><span class="nam">name</span><span class="op">=</span><span class="nam">name</span><span class="op">,</span> <span class="nam">url</span><span class="op">=</span><span class="nam">url</span><span class="op">)</span>  <span class="com"># &#21019;&#24314;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t131" class="stm mis">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">add</span><span class="op">(</span><span class="nam">website</span><span class="op">)</span>  <span class="com"># &#28155;&#21152;&#21040;&#25968;&#25454;&#24211;&#20250;&#35805;</span><span class="strut">&nbsp;</span></p>
+<p id="t132" class="stm mis">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span>  <span class="com"># &#25552;&#20132;&#25968;&#25454;&#24211;&#20250;&#35805;</span><span class="strut">&nbsp;</span></p>
+<p id="t133" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="str">'&#32593;&#22336;&#28155;&#21152;&#25104;&#21151;&#65281;'</span><span class="op">)</span>  <span class="com"># &#26174;&#31034;&#25104;&#21151;&#21019;&#24314;&#30340;&#25552;&#31034;</span><span class="strut">&nbsp;</span></p>
+<p id="t134" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t135" class="pln">        <span class="com"># name = User.query.first().name  # &#35835;&#21462;&#29992;&#25143;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t136" class="stm mis">        <span class="nam">websites</span> <span class="op">=</span> <span class="nam">Website</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">all</span><span class="op">(</span><span class="op">)</span>  <span class="com"># &#26597;&#35810;&#20840;&#37096;&#32593;&#31449;&#25968;&#25454;</span><span class="strut">&nbsp;</span></p>
+<p id="t137" class="stm mis">        <span class="key">return</span> <span class="nam">render_template</span><span class="op">(</span><span class="str">'index.html'</span><span class="op">,</span> <span class="nam">websites</span><span class="op">=</span><span class="nam">websites</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t138" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t139" class="pln"><span class="com"># 404 &#38382;&#39064;</span><span class="strut">&nbsp;</span></p>
+<p id="t140" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">errorhandler</span><span class="op">(</span><span class="num">404</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t141" class="pln"><span class="key">def</span> <span class="nam">page_not_found</span><span class="op">(</span><span class="nam">e</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t142" class="pln">        <span class="com"># user = User.query.first()  # &#35835;&#21462;&#29992;&#25143;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t143" class="stm mis">        <span class="key">return</span> <span class="nam">render_template</span><span class="op">(</span><span class="str">'404.html'</span><span class="op">)</span><span class="op">,</span> <span class="num">404</span>  <span class="com"># &#36820;&#22238;&#27169;&#26495;&#21644;&#29366;&#24577;&#30721;</span><span class="strut">&nbsp;</span></p>
+<p id="t144" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t145" class="pln"><span class="com"># &#22312;&#23376;&#27169;&#26495;&#37324;&#65292;&#25105;&#20204;&#21487;&#20197;&#20351;&#29992; extends &#26631;&#31614;&#26469;&#22768;&#26126;&#32487;&#25215;&#33258;&#26576;&#20010;&#22522;&#27169;&#26495;</span><span class="strut">&nbsp;</span></p>
+<p id="t146" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t147" class="pln"><span class="com"># &#32534;&#36753;&#32593;&#31449;&#20869;&#23481;</span><span class="strut">&nbsp;</span></p>
+<p id="t148" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/website/edit/&lt;int:website_id>'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'GET'</span><span class="op">,</span> <span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t149" class="stm run hide_run"><span class="op">@</span><span class="nam">login_required</span>  <span class="com"># &#30331;&#24405;&#20445;&#25252;</span><span class="strut">&nbsp;</span></p>
+<p id="t150" class="pln"><span class="key">def</span> <span class="nam">edit</span><span class="op">(</span><span class="nam">website_id</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t151" class="stm mis">        <span class="nam">website</span> <span class="op">=</span> <span class="nam">Website</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">get_or_404</span><span class="op">(</span><span class="nam">website_id</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t152" class="pln">        <span class="com"># GET &#21644; POST &#22312;&#21516;&#19968;&#36335;&#30001;&#20013;&#20351;&#29992;</span><span class="strut">&nbsp;</span></p>
+<p id="t153" class="stm mis">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">method</span> <span class="op">==</span> <span class="str">'POST'</span><span class="op">:</span>  <span class="com"># &#22788;&#29702;&#32534;&#36753;&#34920;&#21333;&#30340;&#25552;&#20132;&#35831;&#27714;</span><span class="strut">&nbsp;</span></p>
+<p id="t154" class="stm mis">                <span class="nam">name</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">[</span><span class="str">'name'</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t155" class="stm mis">                <span class="nam">url</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">[</span><span class="str">'url'</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t156" class="stm mis">                <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">name</span><span class="op">)</span> <span class="op">&lt;</span> <span class="num">1</span> <span class="key">or</span> <span class="nam">len</span><span class="op">(</span><span class="nam">url</span><span class="op">)</span> <span class="op">&lt;</span> <span class="num">1</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t157" class="stm mis">                        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#20449;&#24687;&#22635;&#20889;&#38169;&#35823;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t158" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'edit'</span><span class="op">,</span> <span class="nam">website_id</span><span class="op">=</span><span class="nam">website_id</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#23545;&#24212;&#30340;&#32534;&#36753;&#39029;&#38754;</span><span class="strut">&nbsp;</span></p>
+<p id="t159" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t160" class="stm mis">                <span class="nam">website</span><span class="op">.</span><span class="nam">name</span> <span class="op">=</span> <span class="nam">name</span>  <span class="com"># &#26356;&#26032;&#21517;&#31216;</span><span class="strut">&nbsp;</span></p>
+<p id="t161" class="stm mis">                <span class="nam">website</span><span class="op">.</span><span class="nam">url</span> <span class="op">=</span> <span class="nam">url</span>  <span class="com"># &#26356;&#26032;&#32593;&#22336;</span><span class="strut">&nbsp;</span></p>
+<p id="t162" class="stm mis">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span>  <span class="com"># &#25552;&#20132;&#25968;&#25454;&#24211;&#20250;&#35805;</span><span class="strut">&nbsp;</span></p>
+<p id="t163" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="str">'&#20462;&#25913;&#25104;&#21151;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t164" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t165" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t166" class="stm mis">        <span class="key">return</span> <span class="nam">render_template</span><span class="op">(</span><span class="str">'edit.html'</span><span class="op">,</span> <span class="nam">website</span><span class="op">=</span><span class="nam">website</span><span class="op">)</span>  <span class="com"># &#20256;&#20837;&#34987;&#32534;&#36753;&#30340;&#30005;&#24433;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t167" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t168" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t169" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/website/delete/&lt;int:website_id>'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t170" class="stm run hide_run"><span class="op">@</span><span class="nam">login_required</span>  <span class="com"># &#30331;&#24405;&#20445;&#25252;</span><span class="strut">&nbsp;</span></p>
+<p id="t171" class="pln"><span class="key">def</span> <span class="nam">delete</span><span class="op">(</span><span class="nam">website_id</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t172" class="stm mis">        <span class="nam">movie</span> <span class="op">=</span> <span class="nam">Website</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">get_or_404</span><span class="op">(</span><span class="nam">website_id</span><span class="op">)</span>  <span class="com"># &#33719;&#21462;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t173" class="stm mis">        <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">delete</span><span class="op">(</span><span class="nam">movie</span><span class="op">)</span>  <span class="com"># &#21024;&#38500;&#23545;&#24212;&#30340;&#35760;&#24405;</span><span class="strut">&nbsp;</span></p>
+<p id="t174" class="stm mis">        <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span>  <span class="com"># &#25552;&#20132;&#25968;&#25454;&#24211;&#20250;&#35805;</span><span class="strut">&nbsp;</span></p>
+<p id="t175" class="stm mis">        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#21024;&#38500;&#25104;&#21151;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t176" class="stm mis">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t177" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t178" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t179" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t180" class="pln"><span class="com"># --------------------------  Login  ---------------------------------</span><span class="strut">&nbsp;</span></p>
+<p id="t181" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/login'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'GET'</span><span class="op">,</span> <span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t182" class="pln"><span class="key">def</span> <span class="nam">login</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t183" class="stm mis">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">method</span> <span class="op">==</span> <span class="str">'POST'</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t184" class="stm mis">                <span class="nam">username</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">[</span><span class="str">'username'</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t185" class="stm mis">                <span class="nam">password</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">[</span><span class="str">'password'</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t186" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t187" class="stm mis">                <span class="key">if</span> <span class="key">not</span> <span class="nam">username</span> <span class="key">or</span> <span class="key">not</span> <span class="nam">password</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t188" class="stm mis">                        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#36755;&#20837;&#38169;&#35823;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t189" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'login'</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t190" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t191" class="stm mis">                <span class="nam">user</span> <span class="op">=</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t192" class="pln">                <span class="com"># &#39564;&#35777;&#29992;&#25143;&#21517;&#21644;&#23494;&#30721;&#26159;&#21542;&#19968;&#33268;</span><span class="strut">&nbsp;</span></p>
+<p id="t193" class="stm mis">                <span class="key">if</span> <span class="nam">username</span> <span class="op">==</span> <span class="nam">user</span><span class="op">.</span><span class="nam">username</span> <span class="key">and</span> <span class="nam">user</span><span class="op">.</span><span class="nam">validate_password</span><span class="op">(</span><span class="nam">password</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t194" class="stm mis">                        <span class="nam">login_user</span><span class="op">(</span><span class="nam">user</span><span class="op">)</span>  <span class="com"># &#30331;&#20837;&#29992;&#25143;  (Flask-login&#30340;&#25554;&#20214;)</span><span class="strut">&nbsp;</span></p>
+<p id="t195" class="stm mis">                        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#30331;&#24405;&#25104;&#21151;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t196" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#21040;&#20027;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t197" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="str">'&#36755;&#20837;&#29992;&#25143;&#21517;&#25110;&#23494;&#30721;&#38169;&#35823;&#65281;'</span><span class="op">)</span>  <span class="com"># &#22914;&#26524;&#39564;&#35777;&#22833;&#36133;&#65292;&#26174;&#31034;&#38169;&#35823;&#28040;&#24687;</span><span class="strut">&nbsp;</span></p>
+<p id="t198" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'login'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#30331;&#24405;&#39029;&#38754;</span><span class="strut">&nbsp;</span></p>
+<p id="t199" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t200" class="stm mis">        <span class="key">return</span> <span class="nam">render_template</span><span class="op">(</span><span class="str">'login.html'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t201" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t202" class="pln"><span class="com"># -------------------------- Logout ----------------------------------</span><span class="strut">&nbsp;</span></p>
+<p id="t203" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/logout'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t204" class="stm run hide_run"><span class="op">@</span><span class="nam">login_required</span>  <span class="com"># &#29992;&#20110;&#35270;&#22270;&#20445;&#25252;&#65292;&#21518;&#38754;&#20250;&#35814;&#32454;&#20171;&#32461;</span><span class="strut">&nbsp;</span></p>
+<p id="t205" class="pln"><span class="key">def</span> <span class="nam">logout</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t206" class="stm mis">        <span class="nam">logout_user</span><span class="op">(</span><span class="op">)</span>  <span class="com"># &#30331;&#20986;&#29992;&#25143;</span><span class="strut">&nbsp;</span></p>
+<p id="t207" class="stm mis">        <span class="nam">flash</span><span class="op">(</span><span class="str">'&#24050;&#36864;&#20986;&#65281;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t208" class="stm mis">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span>  <span class="com"># &#37325;&#23450;&#21521;&#22238;&#39318;&#39029;</span><span class="strut">&nbsp;</span></p>
+<p id="t209" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t210" class="pln"><span class="com"># &#23545;&#20110;&#19981;&#20801;&#35768;&#26410;&#30331;&#24405;&#29992;&#25143;&#35775;&#38382;&#30340;&#35270;&#22270;&#65292;&#21482;&#38656;&#35201;&#20026;&#35270;&#22270;&#20989;&#25968;&#38468;&#21152;&#19968;&#20010; login_required &#35013;&#39280;&#22120;&#23601;&#21487;&#20197;&#23558;&#26410;&#30331;&#24405;&#29992;&#25143;&#25298;&#20043;&#38376;&#22806;</span><span class="strut">&nbsp;</span></p>
+<p id="t211" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t212" class="stm run hide_run"><span class="op">@</span><span class="nam">app</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/settings'</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">'GET'</span><span class="op">,</span> <span class="str">'POST'</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t213" class="stm run hide_run"><span class="op">@</span><span class="nam">login_required</span><span class="strut">&nbsp;</span></p>
+<p id="t214" class="pln"><span class="key">def</span> <span class="nam">settings</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t215" class="stm mis">        <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">method</span> <span class="op">==</span> <span class="str">'POST'</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t216" class="stm mis">                <span class="nam">name</span> <span class="op">=</span> <span class="nam">request</span><span class="op">.</span><span class="nam">form</span><span class="op">[</span><span class="str">'name'</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t217" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t218" class="stm mis">                <span class="key">if</span> <span class="key">not</span> <span class="nam">name</span> <span class="key">or</span> <span class="nam">len</span><span class="op">(</span><span class="nam">name</span><span class="op">)</span> <span class="op">></span> <span class="num">20</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t219" class="stm mis">                        <span class="nam">flash</span><span class="op">(</span><span class="str">'Invalid input.'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t220" class="stm mis">                        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'settings'</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t221" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t222" class="stm mis">                <span class="nam">current_user</span><span class="op">.</span><span class="nam">name</span> <span class="op">=</span> <span class="nam">name</span><span class="strut">&nbsp;</span></p>
+<p id="t223" class="pln">                <span class="com"># current_user &#20250;&#36820;&#22238;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#30340;&#25968;&#25454;&#24211;&#35760;&#24405;&#23545;&#35937;</span><span class="strut">&nbsp;</span></p>
+<p id="t224" class="pln">                <span class="com"># &#31561;&#21516;&#20110;&#19979;&#38754;&#30340;&#29992;&#27861;</span><span class="strut">&nbsp;</span></p>
+<p id="t225" class="pln">                <span class="com"># user = User.query.first()</span><span class="strut">&nbsp;</span></p>
+<p id="t226" class="pln">                <span class="com"># user.name = name</span><span class="strut">&nbsp;</span></p>
+<p id="t227" class="stm mis">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t228" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="str">'Settings updated.'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t229" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t230" class="stm mis">        <span class="key">return</span> <span class="nam">render_template</span><span class="op">(</span><span class="str">'settings.html'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t231" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t232" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t233" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t234" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t235" class="stm run hide_run"><span class="key">if</span> <span class="nam">__name__</span> <span class="op">==</span> <span class="str">"__main__"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t236" class="stm mis">        <span class="nam">app</span><span class="op">.</span><span class="nam">run</span><span class="op">(</span><span class="nam">host</span><span class="op">=</span><span class="str">"0.0.0.0"</span><span class="op">,</span> <span class="nam">port</span><span class="op">=</span><span class="str">"6666"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
+            created at 2019-09-27 16:53
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

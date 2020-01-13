@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h3>登录</h3>
+<form class="login-form" method="post">  <!-- 指定提交方法为 POST -->
+    <label for="username">账户</label>
+    <input type="text" name="username" id="username"><br>  <!-- 文本输入框 -->
+    <label for="password">密码</label>
+    <input type="text" name="password" id="password"><br>  <!-- 文本输入框 -->
+    <input type="submit" name="submit" id="submit" value="登录">  <!-- 提交按钮 -->
+</form>
+{% endblock %}
