@@ -81,3 +81,21 @@ def login():
 	print(" User Login")
 
 login()
+
+
+# 五、 装饰器传参
+# 装饰器本身需要传入参数，
+# 那就需要编写一个返回装饰器函数的高阶函数，写出来会更复杂。比如，要自定义log的文本：
+def log(text):
+	def decorator(func):
+		def wrapper(*args, **kw):
+			print('%s %s():' % (text, func.__name__))
+			return func(*args, **kw)
+		return wrapper
+	return decorator
+
+@log(text="用户退出模块")
+def logout():
+	print("User Logout")
+
+logout()
