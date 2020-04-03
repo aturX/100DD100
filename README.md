@@ -52,6 +52,6 @@ code100天天天100code
 |  45  |    √     | python爬虫 | 数据采集- 爬虫 1,2,3|
 |  46  |  	√     | 个人待办事项   | Vue+element|
 |  47  |  	√     | 修改DD100DD编码计划  | Markdown 文档 |
-|  48  |  	      | 语言特性：装饰器 | Python |
-|  49  |  	      |         |  |
-|  50  |  	      |         |  |
+|  48  |  	√     | 语言特性：装饰器 | Python |
+|  49  |  	√     | 面向对象编程：五子棋    | Java、Python |
+|  50  |  	√     |  语言特性：@property      | Python |
