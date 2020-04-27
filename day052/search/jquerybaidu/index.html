@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery特效百度搜索</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow: hidden;
+}
+</style>
+<link href="css/font.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-search.css" media="screen" type="text/css" />
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+	function search(){
+		window.open("http://www.baidu.com/s?wd="+$("#input").val());
+	}
+	document.onkeydown = function(event) {
+	var e = event || window.event || arguments.callee.caller.arguments[0];
+	    if (e && e.keyCode == 13) { 
+			search();
+        }
+    };
+</script>
+</head>
+
+<body>
+<canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas>
+<script src="js/word.js"></script>
+<p id="offscreen-text" class="offscreen-text"></p>
+<p id="text" class="text"></p>
+<!--<svg id="svg" > </svg>-->
+
+<div id="d" class="webdesigntuts-workshop"> <span>
+  <input class="input" id="input" type="search" placeholder="请输入您要搜索的内容" autofocus="autofocus"/>
+  <button onclick="search();">百度一下</button>
+  </span> </div>
+
+<script  src='js/index.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+</body>
+</html>

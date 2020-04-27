@@ -56,3 +56,4 @@ code100天天天100code
 |  49  |  	√     | 面向对象编程：五子棋    | Java、Python |
 |  50  |  	√     |  语言特性：@property      | Python |
 |  51  |  	√     | 多进程：模拟BTC地址生成  | Python |
+|  52  |  	√     | Python工程目录结构及项目打包  | Python |
