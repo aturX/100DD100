@@ -57,3 +57,5 @@ code100天天天100code
 |  50  |  	√     |  语言特性：@property      | Python |
 |  51  |  	√     | 多进程：模拟BTC地址生成  | Python |
 |  52  |  	√     | Python工程目录结构及项目打包  | Python |
+|  53  |  	√     | 最小Flask Web应用 | Flask、Python |
+|  54  |  	√     | Python高阶函数使用 | Python语言 |
