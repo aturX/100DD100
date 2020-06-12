@@ -62,3 +62,5 @@ code100天天天100code
 |  55  |  	√     | Python面向对象编程 | Python语言 |
 |  56  |  	√     | Python数据库操作及ORM框架实践 | Python语言 |
 |  57  |  	√     | Python 多线程 | Python语言 |
+|  58  |  	√     | Pow Pos 算法实现 | Python语言 |
+|  59  |  	√     | 异步IO编程 | Python语言 |
