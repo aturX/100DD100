@@ -65,7 +65,7 @@ code100天天天100code
 |  58  |  	√     | Pow Pos 算法实现 | Python语言 |
 |  59  |  	√     | 异步IO编程 | Python语言 |
 |  60  |  	√     | 开发环境与项目框架 | Python从零实现Web框架（1） |
-|  61  |  	√     | 开发环境 | Python从零实现Web框架（2） |
+|  61  |  	√     | ORM 与 Model构建   | Python从零实现Web框架（2） |
 |  62  |  	√     | 开发环境 | Python从零实现Web框架（3） |
 |  63  |  	√     | 开发环境 | Python从零实现Web框架（4） |
 |  64  |  	√     | 开发环境 | Python从零实现Web框架（5） |
