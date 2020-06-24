@@ -2,7 +2,7 @@
 code100天天天100code
 
 
-## 第一个50天 
+## 第一个100天 （编程语言）
 |  第*天  | coding or todo | 功能点 |类型 |
 |:-------|:--------|:-----|:----|
 |  1   |    √     |  计算器  | js,python   |
@@ -67,4 +67,21 @@ code100天天天100code
 |  60  |  	√     | 开发环境与项目框架 | Python从零实现Web框架（1） |
 |  61  |  	√     | ORM 与 Model构建   | Python从零实现Web框架（2） |
 |  62  |  	√     | Web 框架 | Python从零实现Web框架（3） |
- 
+|  63  |  	     | Java 基础（数组操作） | Java 语言 |
+|  64  |  	     | Java 基础（面向对象）| Java 语言 |
+|  65  |  	     | Java 基础（异常处理）| Java 语言 |
+|  66  |  	     | Java 基础（反射）| Java 语言 |
+|  67  |  	     | Java 基础（注解）| Java 语言 |
+|  68  |  	     | Java 基础（集合）| Java 语言 |
+|  69  |  	     | Java 基础（IO）| Java 语言 |
+|  70  |  	     | Java 基础（日期与时间）| Java 语言 |
+|  71  |  	     | Java 基础（加密与安全）| Java 语言 |
+|  72  |  	     | Java 基础（多线程）| Java 语言 |
+|  73  |  	     | Java 中级（Maven）| Java 语言 |
+|  74  |  	     | Java 中级（网络编程）| Java 语言 |
+|  75  |  	     | Java 中级（JDBC）| Java 语言 |
+|  76  |  	     | Java 中级（函数式编程）| Java 语言 |
+|  77  |  	     | Java 中级（设计模式）| Java 语言 |
+|  78  |  	     | Java 高级（Servlet）| Java 语言 |
+|  79  |  	     | Java 高级（Spring）| Java 语言 |
+|  80  |  	     | Java 高级（Spring Boot）| Java 语言 |
