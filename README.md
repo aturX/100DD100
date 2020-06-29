@@ -67,8 +67,8 @@ code100天天天100code
 |  60  |  	√     | 开发环境与项目框架 | Python从零实现Web框架（1） |
 |  61  |  	√     | ORM 与 Model构建   | Python从零实现Web框架（2） |
 |  62  |  	√     | Web 框架 | Python从零实现Web框架（3） |
-|  63  |  	     | Java 基础（数组操作） | Java 语言 |
-|  64  |  	     | Java 基础（面向对象）| Java 语言 |
+|  63  |  	√     | Java 基础（数组操作） | Java 语言 |
+|  64  |  	√     | Java 基础（面向对象）| Java 语言 |
 |  65  |  	     | Java 基础（异常处理）| Java 语言 |
 |  66  |  	     | Java 基础（反射）| Java 语言 |
 |  67  |  	     | Java 基础（注解）| Java 语言 |
